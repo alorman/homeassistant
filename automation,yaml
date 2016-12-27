@@ -11,3 +11,14 @@ automation:
        data:
          message: "received IR command"
          title: "received IR command"
+
+automation:
+  - alias: Shutdown pi via command line on remote
+    trigger:
+      platform: event
+      event_type: ir_command_received
+      event_data:
+        button_name: key_power
+    action:
+      shell_command: 'sudo shutdown'
+      
