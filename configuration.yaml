@@ -86,6 +86,7 @@ binary_sensor:
     monitored_conditionn:
     
 #adding for testing
+automatinon:
 - alias: 'Power Cycle on Remote'
   trigger:
     platform: event
