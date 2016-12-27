@@ -1,4 +1,4 @@
-# separate automaitons file
+# separate automation file
 - alias: 'Power Cycle on Remote'
   trigger:
     platform: event
