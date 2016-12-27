@@ -12,7 +12,6 @@ automation:
          message: "received IR command"
          title: "received IR command"
 
-automation:
   - alias: Shutdown pi via command line on remote
     trigger:
       platform: event
