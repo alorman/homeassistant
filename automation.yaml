@@ -10,10 +10,7 @@
      data:
        message: "received IR command"
        title: "received IR command"
-
-shell_command:
-  shutdown_pi: 'sudo shutdown'
-  
+       
 - alias: 'Shutdown pi via command line on remote'
  trigger:
     platform: event
@@ -21,4 +18,4 @@ shell_command:
     event_data:
       button_name: key_power
   action:
-    shell_command: shutdown_pi
+    service: shell_command.shutdown_pi
