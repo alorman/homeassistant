@@ -64,10 +64,15 @@ nest:
 # source separate automations file
 automation: !include automation.yaml
 
+#Add pushbullet
 notify:
   - name: pushbullet
     platform: pushbullet
     api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+
+#add shell commands
+shell_command:
+  shutdown_pi: 'sudo shutdown'
 
 #binary_sensor:
 #  - platform: nest
