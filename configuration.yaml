@@ -49,12 +49,24 @@ sensor:
 tts:
   platform: google
   
-# source separate automations file
-automation: !include automation.yaml
+#call LIRC
+lirc:
 
-# Attempt to add irsend shell command to turn on/off
-shell_command:
-  send_power: 'irsend send_once testremote key_power'
+#Call IFTTT
+ifttt:
+  key: cOCvfiDE-V_Svs73mauFDF
+
+#Call Nest
+nest:
+  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
+  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
+  
+# source separate automations file
+#automation: !include automation.yaml
+
+# Attempt to add irsend shell command to turn on/off //testing commented out
+#shell_command:
+#  send_power: 'irsend send_once testremote key_power'
 
 notify:
   - name: pushbullet
@@ -69,15 +81,19 @@ switch:
       command_off: "irsend send_once testremote key_power"
       friendly_name: Amplifier Power
 
-lirc:
-
-ifttt:
-  key: cOCvfiDE-V_Svs73mauFDF
-  
-nest:
-  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
-  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
-
 binary_sensor:
   - platform: nest
     monitored_conditionn:
+    
+#adding for testing
+- alias: 'Power Cycle on Remote'
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_playpause
+  action:
+   - service: notify.pushbullet
+     data:
+       message: "received IR command"
+title: "received IR command"
