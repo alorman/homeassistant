@@ -62,7 +62,7 @@ lirc:
 #  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
   
 # source separate automations file
-#automation: !include automation.yaml
+automation: !include automation.yaml
 
 # Attempt to add irsend shell command to turn on/off //testing commented out
 #shell_command:
@@ -86,15 +86,15 @@ notify:
 #    monitored_conditionn:
     
 #adding for testing
-automation:
-- alias: 'Power Cycle on Remote'
-  trigger:
-    platform: event
-    event_type: ir_command_received
-    event_data:
-      button_name: key_playpause
-  action:
-   - service: notify.pushbullet
-     data:
-       message: "received IR command"
-       title: "received IR command"
+#automation:
+#- alias: 'Power Cycle on Remote'
+#  trigger:
+#    platform: event
+#    event_type: ir_command_received
+#    event_data:
+#      button_name: key_playpause
+#  action:
+#   - service: notify.pushbullet
+#     data:
+#       message: "received IR command"
+#       title: "received IR command"
