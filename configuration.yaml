@@ -86,7 +86,7 @@ notify:
 #    monitored_conditionn:
     
 #adding for testing
-automatinon:
+automation:
 - alias: 'Power Cycle on Remote'
   trigger:
     platform: event
