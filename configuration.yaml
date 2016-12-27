@@ -97,4 +97,4 @@ automatinon:
    - service: notify.pushbullet
      data:
        message: "received IR command"
-         title: "received IR command"
+       title: "received IR command"
