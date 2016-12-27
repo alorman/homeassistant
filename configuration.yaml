@@ -57,7 +57,7 @@ notify:
   - name: pushbullet
     platform: pushbullet
     api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
-
+      
 switch:
   platform: command_line
   switches:
@@ -68,6 +68,17 @@ switch:
 
 lirc:
 
+ifttt:
+  key: cOCvfiDE-V_Svs73mauFDF
+  
+nest:
+  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
+  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
+
+binary_sensor:
+  - platform: nest
+    monitored_conditionn:
+    
 automation:
   - alias: Power Cycle on Remote
     trigger:
