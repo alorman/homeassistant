@@ -53,13 +53,13 @@ tts:
 lirc:
 
 #Call IFTTT
-ifttt:
-  key: cOCvfiDE-V_Svs73mauFDF
+#ifttt:
+#  key: cOCvfiDE-V_Svs73mauFDF
 
 #Call Nest
-nest:
-  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
-  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
+#nest:
+#  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
+#  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
   
 # source separate automations file
 #automation: !include automation.yaml
@@ -73,17 +73,17 @@ notify:
     platform: pushbullet
     api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
       
-switch:
-  platform: command_line
-  switches:
-    amplifier_power:
-      command_on: "irsend send_once testremote key_power"
-      command_off: "irsend send_once testremote key_power"
-      friendly_name: Amplifier Power
+#switch:
+#  platform: command_line
+#  switches:
+#    amplifier_power:
+#      command_on: "irsend send_once testremote key_power"
+#      command_off: "irsend send_once testremote key_power"
+#      friendly_name: Amplifier Power
 
-binary_sensor:
-  - platform: nest
-    monitored_conditionn:
+#binary_sensor:
+#  - platform: nest
+#    monitored_conditionn:
     
 #adding for testing
 automatinon:
@@ -97,4 +97,4 @@ automatinon:
    - service: notify.pushbullet
      data:
        message: "received IR command"
-title: "received IR command"
+         title: "received IR command"
