@@ -12,7 +12,7 @@
        title: "received IR command"
        
 - alias: 'Shutdown pi via command line on remote'
- trigger:
+  trigger:
     platform: event
     event_type: ir_command_received
     event_data:
