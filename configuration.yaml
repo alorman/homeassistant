@@ -62,13 +62,13 @@ nest:
   client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
 
 #Call Emulated Hue
-  emulated_hue:
-    host_ip: 192.168.1.111
-    listen_port: 8300
-    expose_by_default: true
-    exposed_domains:
-      - light
-      - switch
+emulated_hue:
+  host_ip: 192.168.1.111
+  listen_port: 8300
+  expose_by_default: true
+  exposed_domains:
+    - light
+    - switch
   
 # source separate automations file
 automation: !include automation.yaml
