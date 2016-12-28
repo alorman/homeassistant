@@ -67,6 +67,7 @@ nest:
     expose_by_default: true
     exposed_domains:
       - light
+      - switch
   
 # source separate automations file
 automation: !include automation.yaml
