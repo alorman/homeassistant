@@ -88,8 +88,8 @@ switch:
   platform: command_line
   switches:
     tv_ir:
-      command_on: "irsend send_once testremote key_power"
-      command_off: "irsend send_once testremote key_power"
+      command_on: "sudo shutdown"
+      command_off: "sudo shutdown"
       friendly_name: Living Room TV
 
 #binary_sensor:
