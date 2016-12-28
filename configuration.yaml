@@ -81,6 +81,15 @@ notify:
 shell_command:
   shutdown_pi: 'sudo shutdown'
 
+#add swith for TV
+switch:
+  platform: command_line
+  switches:
+    tv_ir:
+      command_on: "irsend send_once testremote key_power"
+      command_off: "irsend send_once testremote key_power"
+      friendly_name: Living Room TV
+
 #binary_sensor:
 #  - platform: nest
 #    monitored_conditionn:
