@@ -95,6 +95,12 @@ switch:
       command_off: "test2"
       friendly_name: Kitchen Light Switch
 
+switch:
+  platform: dlink
+  host: 192.168.10.10
+  username: admin
+  password: admin
+  
 #binary_sensor:
 #  - platform: nest
 #    monitored_conditionn:
