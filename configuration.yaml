@@ -1,6 +1,6 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: 632 Mass Ave
   # Location required to calculate the time the sun rises and sets
   latitude: 38.9413
   longitude: -76.4915
@@ -67,12 +67,6 @@ emulated_hue:
     - light
     - switch
     - media_player
- 
-# source separate automations file
-automation: !include automation.yaml
-
-#include the customize file
-#customize: !include customize.yaml
 
 #Add pushbullet
 notify:
@@ -93,6 +87,21 @@ switch:
       command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
       friendly_name: Living Room TV
 
+switch:
+  platform: command_line
+  switches:
+    kitchen_light:
+      command_on: "test1"
+      command_off: "test2"
+      friendly_name: Kitchen Light Switch
+
 #binary_sensor:
 #  - platform: nest
 #    monitored_conditionn:
+
+ 
+# source separate automations file
+automation: !include automation.yaml
+
+#include the customize file
+#customize: !include customize.yaml
