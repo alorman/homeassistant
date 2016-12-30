@@ -86,8 +86,7 @@ switch:
       command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
       command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
       friendly_name: Living Room TV
-
-switch:
+      
   platform: command_line
   switches:
     kitchen_light:
@@ -95,7 +94,6 @@ switch:
       command_off: "test2"
       friendly_name: Kitchen Light Switch
 
-switch:
   platform: dlink
   host: 192.168.10.10
   username: admin
