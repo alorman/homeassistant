@@ -80,28 +80,46 @@ shell_command:
 
 #add swith for TV
 switch:
-  platform: command_line
-  switches:
-    tv_ir:
-      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-      friendly_name: Living Room TV
+  - platform: command_line
+    switches:
+      tv_ir:
+        command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
+        command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+        friendly_name: Living Room TV
       
-  platform: command_line
-  switches:
-    kitchen_light:
-      command_on: "test1"
-      command_off: "test2"
-      friendly_name: Kitchen Light Switch
+  - platform: command_line
+    switches:
+      kitchen_light:
+        command_on: "test1"
+        command_off: "test2"
+        friendly_name: Kitchen Light Switch
 
-  platform: dlink
-  host: 192.168.10.10
-  username: admin
-  password: admin
-  
-#binary_sensor:
-#  - platform: nest
-#    monitored_conditionn:
+  - platform: dlink
+    host: 192.168.10.10
+    username: admin
+    password: admin
+
+input_select:
+  abodestatus:
+    name: Abode status
+    options:
+     - standby
+     - home
+     - away
+    initial: standby
+    icon: mdi:security
+  livingroomharmony:
+    name: Harmony Activity
+    options:
+     - PowerOff
+     - Watch Fire TV
+     - Chromecast
+     - Youtube
+     - SATV
+     - Watch TV
+     - Watch Apple TV
+    initial: PowerOff
+    icon: mdi:remote
 
  
 # source separate automations file
