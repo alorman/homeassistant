@@ -85,15 +85,13 @@ switch:
       tv_ir:
         command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
         command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-        friendly_name: Living Room TV
-      
+        friendly_name: Living Room TV 
   - platform: command_line
     switches:
       kitchen_light:
         command_on: "test1"
         command_off: "test2"
         friendly_name: Kitchen Light Switch
-
   - platform: dlink
     host: 192.168.10.10
     username: admin
@@ -121,7 +119,11 @@ input_select:
     initial: PowerOff
     icon: mdi:remote
 
- 
+  customize:
+    switch.tv_ir:
+      friendly_name: Living Room TV
+      icon: mdi:kettle
+      
 # source separate automations file
 automation: !include automation.yaml
 
