@@ -69,9 +69,13 @@ emulated_hue:
   exposed_domains:
     - light
     - switch
+    - media_player
   
 # source separate automations file
 automation: !include automation.yaml
+
+#include the customize file
+customize: !include customize.yaml
 
 #Add pushbullet
 notify:
