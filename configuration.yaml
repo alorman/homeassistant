@@ -24,7 +24,7 @@ http:
 updater:
 
 #include the customize file
-customize: !include customize.yaml 
+  customize: !include customize.yaml 
 
 # Discover some devices automatically
 discovery:
