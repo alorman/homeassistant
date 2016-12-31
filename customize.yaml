@@ -1,1 +1,4 @@
 #customize display icons
+switch.tv_ir:
+  friendly_name: Living Room TV
+  icon: mdi:kettle
