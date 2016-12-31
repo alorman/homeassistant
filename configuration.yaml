@@ -82,7 +82,7 @@ shell_command:
   shutdown_pi: 'sudo shutdown'
 
 #add swith for TV
-switch:
+  switch:
   - platform: command_line
     switches:
       tv_ir:
@@ -96,11 +96,6 @@ switch:
         command_on: "test1"
         command_off: "test2"
         friendly_name: Kitchen Light Switch
-
-  customize:
-    switch.tv_ir:
-      friendly_name: Living Room TV
-      icon: mdi:kettle
       
 # source separate automations file
 automation: !include automation.yaml
