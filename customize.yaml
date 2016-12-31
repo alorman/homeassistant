@@ -1,4 +1,4 @@
 #customize display icons
-switch.tv_ir:
-  friendly_name: It works
-  icon: mdi:kettle
+  switch.tv_ir:
+    friendly_name: It works
+    icon: mdi:kettle
