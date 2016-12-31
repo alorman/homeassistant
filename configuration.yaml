@@ -72,10 +72,10 @@ emulated_hue:
     - media_player
 
 #Add pushbullet
-notify:
-  name: pushbullet
-  platform: pushbullet
-  api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+  notify:
+  - name: pushbullet
+    platform: pushbullet
+    api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
 
 #add shell commands
 shell_command:
