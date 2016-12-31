@@ -75,9 +75,9 @@ emulated_hue:
 
 #Add pushbullet
 notify:
-  name: pushbullet
-  platform: pushbullet
-  api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+  - name: pushbullet
+    platform: pushbullet
+    api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
 
 #add shell commands
 shell_command:
