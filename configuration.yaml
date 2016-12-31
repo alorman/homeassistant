@@ -102,7 +102,7 @@ automation: !include automation.yaml
 
 #include the customize file
 #customize: !include customize.yaml
-customize:
-  switch.tv_ir:
-    friendly_name: Living Room TV
-icon: mdi:kettle
+  customize:
+    switch.tv_ir:
+      friendly_name: Living Room TV
+      icon: mdi:kettle
