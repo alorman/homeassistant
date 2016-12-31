@@ -23,9 +23,6 @@ http:
 # Checks for available updates
 updater:
 
-#include the customize file
-  customize: !include customize.yaml 
-
 # Discover some devices automatically
 discovery:
 
@@ -102,3 +99,6 @@ switch:
       
 # source separate automations file
 automation: !include automation.yaml   
+
+  #include the customize file
+  customize: !include customize.yaml 
