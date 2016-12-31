@@ -60,7 +60,7 @@ nest:
   client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
   client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
 
-thermostat:
+climate:
   platform: nest
 
 #Call Emulated Hue
