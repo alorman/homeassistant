@@ -102,7 +102,7 @@ automation: !include automation.yaml
 
 #include the customize file
 #customize: !include customize.yaml
-customize:
+  customize:
   switch.tv_ir:
     friendly_name: Ha, it works
     icon: mdi:kettle
