@@ -104,5 +104,10 @@ automation: !include automation.yaml
 #customize: !include customize.yaml
 customize:
   switch.tv_ir:
-    friendly_name: Living Room TV
+    friendly_name: Ha, it works
+    icon: mdi:kettle
+    
+  switch.kitchen_light:
+    hidden: true
+    friendly_name: Ha, it works
     icon: mdi:kettle
