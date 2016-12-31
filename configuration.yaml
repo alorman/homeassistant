@@ -23,6 +23,9 @@ http:
 # Checks for available updates
 updater:
 
+#include the customize file
+customize: !include customize.yaml 
+
 # Discover some devices automatically
 discovery:
 
@@ -98,16 +101,4 @@ switch:
       friendly_name: Kitchen Light Switch
       
 # source separate automations file
-automation: !include automation.yaml
-
-#include the customize file
-#customize: !include customize.yaml
-customize:
-  switch.tv_ir:
-  friendly_name: Ha, it works
-  icon: mdi:kettle
-    
-  switch.kitchen_light:
-  hidden: true
-  friendly_name: Ha, it works
-  icon: mdi:kettle
+automation: !include automation.yaml   
