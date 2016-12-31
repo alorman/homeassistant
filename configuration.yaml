@@ -102,12 +102,12 @@ automation: !include automation.yaml
 
 #include the customize file
 #customize: !include customize.yaml
-  customize:
+customize:
   switch.tv_ir:
-    friendly_name: Ha, it works
-    icon: mdi:kettle
+  friendly_name: Ha, it works
+  icon: mdi:kettle
     
   switch.kitchen_light:
-    hidden: true
-    friendly_name: Ha, it works
-    icon: mdi:kettle
+  hidden: true
+  friendly_name: Ha, it works
+  icon: mdi:kettle
