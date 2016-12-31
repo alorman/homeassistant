@@ -72,30 +72,30 @@ emulated_hue:
     - media_player
 
 #Add pushbullet
-  notify:
-  - name: pushbullet
-    platform: pushbullet
-    api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+notify:
+- name: pushbullet
+  platform: pushbullet
+  api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
 
 #add shell commands
 shell_command:
   shutdown_pi: 'sudo shutdown'
 
 #add swith for TV
-  switch:
-  - platform: command_line
-    switches:
-      tv_ir:
-        command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-        command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-        friendly_name: Living Room TV 
+switch:
+- platform: command_line
+  switches:
+    tv_ir:
+      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
+      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+      friendly_name: Living Room TV 
 
-  - platform: command_line
-    switches:
-      kitchen_light:
-        command_on: "test1"
-        command_off: "test2"
-        friendly_name: Kitchen Light Switch
+- platform: command_line
+  switches:
+    kitchen_light:
+      command_on: "test1"
+      command_off: "test2"
+      friendly_name: Kitchen Light Switch
       
 # source separate automations file
 automation: !include automation.yaml
