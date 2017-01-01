@@ -32,3 +32,15 @@
       data:
         group_name: "Bedroom"
         scene_name: "Bedroom Warm"
+        
+- alias: 'Following state machine for TV'
+  hidden: true
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_power
+    action:
+      - state: LG_TV|state
+        data: off
+        
