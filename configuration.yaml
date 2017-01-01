@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: 632 Mass Ave
   # Location required to calculate the time the sun rises and sets
-  latitude: 38.9413
-  longitude: -76.4915
+  latitude: !secret lattitude
+  longitude: !secret longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 8
   # metric for Metric, imperial for Imperial
@@ -18,7 +18,7 @@ frontend:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  # api_password: !secrets api_password
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
@@ -53,12 +53,12 @@ lirc:
 
 #Call IFTTT
 ifttt:
-  key: cOCvfiDE-V_Svs73mauFDF
+  key: !secret ifttt_key
 
 #Call Nest
 nest:
-  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
-  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
+  client_id: !secret nest_clientid
+  client_secret: !secret nest_secret
 
 climate:
   platform: nest
@@ -77,7 +77,7 @@ emulated_hue:
 notify:
   - name: pushbullet
     platform: pushbullet
-    api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+    api_key: !secret pushbullet_apikey
 
 #add shell commands
 shell_command:
