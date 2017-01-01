@@ -104,7 +104,6 @@ switch:
 media_player:
   - platform: universal
     name: LG_TV
-    name: LG TV
     commands:
       turn_on: "irsend send_once testremote key_power && sudo wall irsend power key"
       turn_off: "irsend send_once testremote key_power && sudo wall irsend power key"
