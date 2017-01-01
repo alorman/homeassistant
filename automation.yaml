@@ -19,3 +19,15 @@
       button_name: key_power
   action:
     service: shell_command.shutdown_pi
+    
+- alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_nine
+  action:
+    - service: light.hue_activate_scene
+      data:
+        group_name: "Bedroom"
+        scene_name: "Bedroom Warm"
