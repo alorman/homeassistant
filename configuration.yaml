@@ -83,6 +83,7 @@ notify:
 #add shell commands
 shell_command:
   shutdown_pi: 'sudo shutdown'
+  lg_tv_on: 'irsend send_once testremote key_power && sudo wall lg tv is now on'
 
 #add switches
 switch:
@@ -103,13 +104,14 @@ switch:
 #Media players
 media_player:
   - platform: universal
-    name: LG_TV
+    name: LG TV
     commands:
-      turn_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-      turn_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-      volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
-      volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
-      volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+      turn_on: 
+        service: shell_command.lg_tv_on
+      #turn_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+      #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
+      #volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+      #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
     
     attributes:
       state: switch.tv_ir
