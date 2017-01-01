@@ -60,6 +60,7 @@ nest:
   client_id: !secret nest_clientid
   client_secret: !secret nest_secret
 
+#call climate
 climate:
   platform: nest
 
@@ -73,7 +74,7 @@ emulated_hue:
     - switch
     - media_player
 
-#Add pushbullet
+#Add notify components
 notify:
   - name: pushbullet
     platform: pushbullet
@@ -83,7 +84,7 @@ notify:
 shell_command:
   shutdown_pi: 'sudo shutdown'
 
-#add swith for TV
+#add switches
 switch:
 - platform: command_line
   switches:
@@ -98,6 +99,22 @@ switch:
       command_on: "test1"
       command_off: "test2"
       friendly_name: Kitchen Light Switch
-      
+
+#Media players
+media_player:
+  - platform: universal
+    name: LG_TV
+    friendly_name: LG TV
+    commands:
+      turn_on: "irsend send_once testremote key_power && sudo wall irsend power key"
+      turn_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+      volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
+      volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+      volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+    
+    attributes:
+      state: switch.tv_ir
+      is_volume_muted: switch.tv_ir_mute
+    
 # source separate automations file
 automation: !include automation.yaml   
