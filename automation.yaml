@@ -53,6 +53,6 @@
     event_data:
       button_name: key_playpause
   action:
-    - service: homeassistatn.turn_off
+    - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
       
