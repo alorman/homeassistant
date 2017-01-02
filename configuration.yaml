@@ -36,6 +36,9 @@ history:
 
 # View all events in a logbook
 logbook:
+  exclude:
+    entities:
+      - sensor.sun
 
 # Track the sun
 sun:
