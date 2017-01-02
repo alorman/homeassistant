@@ -98,10 +98,10 @@ media_player:
     commands:
       turn_on: 
         service: input_boolean.lg_tv_status
-        data: on
+        data: 'on'
       turn_off: 
         service: input_boolean.lg_tv_status
-        data: on
+        data: 'on'
       #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
       #volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
       #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
