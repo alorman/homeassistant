@@ -91,6 +91,9 @@ switch: !include switches.yaml
 #add input booleans
 input_boolean: !include input_booleans.yaml
 
+#add scripts
+script: !include scripts.yaml
+
 #Media players
 media_player:
   - platform: universal
