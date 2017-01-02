@@ -101,7 +101,7 @@ media_player:
     name: LG TV
     commands:
       turn_on: 
-        service: script.lg_tv_off
+        service: script.lg_tv_on
       turn_off: 
         service: script.lg_tv_off
       #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
