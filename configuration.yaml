@@ -86,20 +86,10 @@ shell_command:
   lg_tv_on: 'irsend send_once testremote key_power && sudo wall lg tv is now on'
 
 #add switches
-switch:
-- platform: command_line
-  switches:
-    tv_ir:
-      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-      friendly_name: Living Room TV 
+switch: !include switches.yaml
 
-- platform: command_line
-  switches:
-    kitchen_light:
-      command_on: "test1"
-      command_off: "test2"
-      friendly_name: Kitchen Light Switch
+#add input booleans
+input_boolean: !include input_booleans.yaml
 
 #Media players
 media_player:
