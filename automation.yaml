@@ -40,6 +40,6 @@
     event_type: ir_command_received
     event_data:
       button_name: key_playpause
-    action:
-      - service: homeassistant.turn_on
-        entity_id: input_boolean.lg_tv_status
+  action:
+    - service: homeassistant.turn_on
+      entity_id: input_boolean.lg_tv_status
