@@ -5,10 +5,14 @@ lg_tv_on:
     - service: homeassistant.turn_on
       entity_id: input_boolean.lg_tv_status
     - service: shell_command.lg_tv_on
+    - service: homeassistant.turn_on
+      entity_id: media_player.LG TV
     
 lg_tv_off:
   alias: Turn LG TV + State Off
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
+    - service: homeassistant.turn_off
+      entity_id: media_player.LG TV
     - service: shell_command.lg_tv_off
