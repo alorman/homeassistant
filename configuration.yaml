@@ -97,8 +97,8 @@ media_player:
     name: LG TV
     commands:
       turn_on: 
-        service: input_boolean.lg_tv_status
-        data: 'on'
+        service: shell_command
+        data: lg_tv_on
       turn_off: 
         service: input_boolean.lg_tv_status
         data: 'on'
