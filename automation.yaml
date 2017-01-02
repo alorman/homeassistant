@@ -42,5 +42,5 @@
       button_name: key_playpause
     action:
       - state: input_boolean.lg_tv_status
-        data: on
-        
+        data: 'on'
+       
