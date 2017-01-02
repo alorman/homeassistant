@@ -39,8 +39,8 @@
     platform: event
     event_type: ir_command_received
     event_data:
-      button_name: key_power
+      button_name: key_playpause
     action:
-      - state: LG TV|state
-        data: off
+      - state: input_boolean.lg_tv_status
+        data: on
         
