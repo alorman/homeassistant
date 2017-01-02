@@ -6,7 +6,7 @@ lg_tv_on:
       entity_id: input_boolean.lg_tv_status
     - service: shell_command.lg_tv_on
     - service: homeassistant.turn_on
-      entity_id: media_player.LG TV
+      entity_id: media_player.LG_TV
     
 lg_tv_off:
   alias: Turn LG TV + State Off
@@ -14,5 +14,5 @@ lg_tv_off:
     - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
     - service: homeassistant.turn_off
-      entity_id: media_player.LG TV
+      entity_id: media_player.LG_TV
     - service: shell_command.lg_tv_off
