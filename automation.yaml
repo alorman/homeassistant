@@ -33,7 +33,9 @@
         group_name: "Bedroom"
         scene_name: "Bedroom Warm"
         
-- alias: 'Following state machine for TV'
+ #following state machine for TV on-off
+ 
+- alias: 'Following state machine for TV -on'
   #hidden: true
   trigger:
     platform: event
@@ -43,3 +45,14 @@
   action:
     - service: homeassistant.turn_on
       entity_id: input_boolean.lg_tv_status
+
+- alias: 'Following state machine for TV -off'
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_playpause
+  action:
+    - service: homeassistatn.turn_off
+      entity_id: input_boolean.lg_tv_status
+      
