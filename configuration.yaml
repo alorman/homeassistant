@@ -97,15 +97,17 @@ media_player:
     name: LG TV
     commands:
       turn_on: 
-        service: shell_command.lg_tv_on
-      #turn_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+        service: input_boolean.lg_tv_status
+        data: on
+      turn_off: 
+        service: input_boolean.lg_tv_status
+        data: on
       #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
       #volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
       #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
     
     attributes:
-      state: switch.tv_ir
-      is_volume_muted: switch.tv_ir_mute
+      state: input_boolean.lg_tv_status
     
 # source separate automations file
 automation: !include automation.yaml   
