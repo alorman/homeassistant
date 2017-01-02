@@ -1,5 +1,5 @@
 #input booleans
-- lg_tv_status:
-    name: See if the LG TV is on or off
-    initial: off
-    hidden: true
+lg_tv_status:
+  name: See if the LG TV is on or off
+  initial: off
+  hidden: true
