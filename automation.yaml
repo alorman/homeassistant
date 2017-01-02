@@ -41,6 +41,6 @@
     event_data:
       button_name: key_playpause
     action:
-      - state: input_boolean.lg_tv_status
-        data: 'on'
+      service: homeassistant.turn_on
+      entity_id: input_boolean.lg_tv_on
        
