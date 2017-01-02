@@ -2,5 +2,4 @@
 lg_tv_status:
   name: See if the LG TV is on or off
   initial: off
-    icon: mdi:tv
     hidden: true
