@@ -24,7 +24,7 @@ apple_tv_on:
       entity_id: input_boolean.apple_tv_status
     - service: shell_command.apple_tv_on
     - service: homeassistant.turn_on
-      entity_id: media_player.Apple TV
+      entity_id: media_player.Apple_TV
     
 apple_tv_off:
   alias: Turn LG TV + State Off
@@ -32,5 +32,5 @@ apple_tv_off:
     - service: homeassistant.turn_off
       entity_id: input_boolean.apple_tv_status
     - service: homeassistant.turn_off
-      entity_id: media_player.Apple TV
+      entity_id: media_player.Apple_TV
     - service: shell_command.apple_tv_off
