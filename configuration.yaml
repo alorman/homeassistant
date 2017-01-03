@@ -89,11 +89,11 @@ notify:
   host: rasplex_host
   port: 8080
 
-- platform: twilio_sms
-  name: twilio_sms
-  account_sid: twilio_account_sid
-  auth_token: twilio_auth_token
-  from_number: twilio_from_number
+- platform: kodi
+  name: rasplex2
+  host: rasplex_host2
+  port: 8081
+  
 #  - name: pushbullet
 #    platform: pushbullet
 #    api_key: !secret pushbullet_apikey
