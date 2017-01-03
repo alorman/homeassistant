@@ -1,6 +1,7 @@
 #include the scripts
 lg_tv_on:
   alias: Turn LG TV + State On
+  hidden: true
   sequence:
     - service: homeassistant.turn_on
       entity_id: input_boolean.lg_tv_status
@@ -10,6 +11,7 @@ lg_tv_on:
     
 lg_tv_off:
   alias: Turn LG TV + State Off
+  hidden: true
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
