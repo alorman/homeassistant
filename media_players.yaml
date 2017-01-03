@@ -1,6 +1,6 @@
 #List of media players
 - platform: universal
-    name: LG_TV
+    name: LG TV
     commands:
       turn_on: 
         service: script.lg_tv_on
@@ -12,8 +12,8 @@
     attributes:
       state: input_boolean.lg_tv_status
       
-- platform: universal
-    name: Apple_TV
+- platform: universal2
+    name: Apple TV
     commands:
       turn_on: 
         service: script.apple_tv_on
