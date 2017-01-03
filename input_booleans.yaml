@@ -2,14 +2,14 @@
 lg_tv_status:
   name: LG TV Status
   initial: off
-  #hidden: true
+  hidden: true
 
 apple_tv_status:
   name: Apple Tv Status
   initial: off
-  #hidden: true
+  hidden: true
 
 teac_amp_status:
   name: Teac Amplifier Status
   initial: off
-  #hidden: true
+  hidden: true
