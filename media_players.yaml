@@ -1,0 +1,28 @@
+#List of media players
+- platform: universal
+    name: LG TV
+    commands:
+      turn_on: 
+        service: script.lg_tv_on
+      turn_off: 
+        service: script.lg_tv_off
+      #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
+      #volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+      #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+    attributes:
+      state: input_boolean.lg_tv_status
+      
+- platform: universal
+    name: Apple TV
+    commands:
+      turn_on: 
+        service: script.apple_tv_on
+      turn_off: 
+        service: script.apple_tv_off
+      #volume_up: "irsend send_once testremote key_volumeup && sudo wall apple tv on"
+      #volume_down: "irsend send_once testremote key_volumedown && sudo wall apple tv down"
+      #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
+    attributes:
+      state: input_boolean.apple_tv_status
+       
+    
