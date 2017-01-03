@@ -1,0 +1,14 @@
+#File contains switches
+- platform: command_line
+  switches:
+    tv_ir:
+      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
+      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
+      friendly_name: Living Room TV 
+
+- platform: command_line
+  switches:
+    kitchen_light:
+      command_on: "test1"
+      command_off: "test2"
+      friendly_name: Kitchen Light Switch

@@ -1,9 +1,9 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: 632 Mass Ave
   # Location required to calculate the time the sun rises and sets
-  latitude: 38.9413
-  longitude: -76.4915
+  latitude: !secret lattitude
+  longitude: !secret longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 8
   # metric for Metric, imperial for Imperial
@@ -11,15 +11,20 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/New_York
 
+  #include the customize file
+  customize: !include customize.yaml 
+
+
 # Show links to resources in log and frontend
 #introduction:
+
 
 # Enables the frontend
 frontend:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  # api_password: !secrets api_password
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
@@ -37,6 +42,9 @@ history:
 
 # View all events in a logbook
 logbook:
+  exclude:
+    entities:
+      - sensor.sun
 
 # Track the sun
 sun:
@@ -54,12 +62,16 @@ lirc:
 
 #Call IFTTT
 ifttt:
-  key: cOCvfiDE-V_Svs73mauFDF
+  key: !secret ifttt_key
 
 #Call Nest
 nest:
-  client_id: 741449c2-df35-4c3f-9d85-064d0ec276d6
-  client_secret: m54H1Rr9gO8YdNI7H7YaN9hj1
+  client_id: !secret nest_clientid
+  client_secret: !secret nest_secret
+
+#call climate
+climate:
+  platform: nest
 
 #Call Emulated Hue
 emulated_hue:
@@ -69,29 +81,28 @@ emulated_hue:
   exposed_domains:
     - light
     - switch
-  
-# source separate automations file
-automation: !include automation.yaml
+    - media_player
 
-#Add pushbullet
+#Add notify components
 notify:
   - name: pushbullet
     platform: pushbullet
-    api_key: o.72dwTslKwhumfsc2tX0IvKetJFtjzelC
+    api_key: !secret pushbullet_apikey
 
 #add shell commands
-shell_command:
-  shutdown_pi: 'sudo shutdown'
+shell_command: !include command_lines.yaml
 
-#add swith for TV
-switch:
-  platform: command_line
-  switches:
-    tv_ir:
-      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-      friendly_name: Living Room TV
+#add switches
+switch: !include switches.yaml
 
-#binary_sensor:
-#  - platform: nest
-#    monitored_conditionn:
+#add input booleans
+input_boolean: !include input_booleans.yaml
+
+#add scripts
+script: !include scripts.yaml
+
+#add media players
+media_player: !include media_players.yaml
+  
+# source separate automations file
+automation: !include automation.yaml   

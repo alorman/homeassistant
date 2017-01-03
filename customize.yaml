@@ -1,0 +1,7 @@
+#customize display icons
+switch.tv_ir:
+  friendly_name: It works
+  icon: mdi:kettle
+switch.kitchen_light:
+  friendly_name: maybe?
+  icong: mdi:helicpter
