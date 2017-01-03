@@ -84,9 +84,9 @@ emulated_hue:
 
 #Add notify components
 notify:
-#  - name: pushbullet
-#    platform: pushbullet
-#    api_key: !secret pushbullet_apikey
+  - name: pushbullet
+    platform: pushbullet
+    api_key: !secret pushbullet_apikey
 
 #add shell commands
 shell_command: !include command_lines.yaml
