@@ -86,14 +86,14 @@ emulated_hue:
 notify:
 - platform: kodi
   name: rasplex
-  host: !secret rasplex_host
-  port: !secret rasplex_port
+  host: rasplex_host
+  port: 8080
 
 - platform: twilio_sms
   name: twilio_sms
-  account_sid: !secret twilio_account_sid
-  auth_token: !secret twilio_auth_token
-  from_number: !secret twilio_from_number
+  account_sid: twilio_account_sid
+  auth_token: twilio_auth_token
+  from_number: twilio_from_number
 #  - name: pushbullet
 #    platform: pushbullet
 #    api_key: !secret pushbullet_apikey
