@@ -18,7 +18,7 @@ lg_tv_off:
     - service: shell_command.lg_tv_off
     
 apple_tv_on:
-  alias: Turn LG TV + State On
+  alias: Turn Apple TV + State On
   sequence:
     - service: homeassistant.turn_on
       entity_id: input_boolean.apple_tv_status
@@ -27,7 +27,7 @@ apple_tv_on:
       entity_id: media_player.Apple_TV
     
 apple_tv_off:
-  alias: Turn LG TV + State Off
+  alias: Apple TV + State Off
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.apple_tv_status
