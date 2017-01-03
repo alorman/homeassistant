@@ -83,7 +83,7 @@ emulated_hue:
     - media_player
 
 #Add notify components
-notify:
+#notify:
 #  - name: pushbullet
 #    platform: pushbullet
 #    api_key: !secret pushbullet_apikey
