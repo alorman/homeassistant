@@ -35,8 +35,8 @@
         
  #following state machine for TV on-off
  
-- alias: 'Following state machine for TV -on'
-  #hidden: true
+- alias: 'Following state machine for TV'
+  hidden: true
   trigger:
     platform: event
     event_type: ir_command_received
@@ -45,6 +45,28 @@
   action:
     - service: homeassistant.toggle
       entity_id: input_boolean.lg_tv_status
+
+- alias: 'Following state machine for Apple TV'
+  hidden: true
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_playpause
+  action:
+    - service: homeassistant.toggle
+      entity_id: input_boolean.apple_tv_status
+
+- alias: 'Following state machine for Teac Amplifier'
+  hidden: true
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_playpause
+  action:
+    - service: homeassistant.toggle
+      entity_id: input_boolean.teac_amp_status
 
 #- alias: 'Following state machine for TV -off'
 #  trigger:
