@@ -1,5 +1,10 @@
 #input booleans
 lg_tv_status:
-  name: See if the LG TV is on or off
+  name: LG TV State Switch
+  initial: off
+  #hidden: true
+
+apple_tv_status:
+  name: Apple Tv State Switch
   initial: off
   #hidden: true
