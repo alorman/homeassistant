@@ -88,6 +88,8 @@ shell_command:
   shutdown_pi: 'sudo shutdown'
   lg_tv_on: 'irsend send_once testremote key_power && sudo wall lg tv is now on'
   lg_tv_off: 'irsend send_once testremote key_power && sudeo wall lg tv is now off'
+  apple_tv_on: 'irsend send_once testremote key_power && sudeo wall apple tv is now on'
+  apple_tv_off: 'irsend send_once testremote key_power && sudeo wall apple tv is now off'
 
 #add switches
 switch: !include switches.yaml
@@ -98,21 +100,8 @@ input_boolean: !include input_booleans.yaml
 #add scripts
 script: !include scripts.yaml
 
-#Media players
-media_player:
-  - platform: universal
-    name: LG TV
-    commands:
-      turn_on: 
-        service: script.lg_tv_on
-      turn_off: 
-        service: script.lg_tv_off
-      #volume_up: "irsend send_once testremote key_volumeup && sudo wall irsend power key"
-      #volume_down: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
-      #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
-    
-    attributes:
-      state: input_boolean.lg_tv_status
-    
+#add media players
+media_player: !include media_players.yaml
+  
 # source separate automations file
 automation: !include automation.yaml   
