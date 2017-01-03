@@ -84,12 +84,7 @@ notify:
     api_key: !secret pushbullet_apikey
 
 #add shell commands
-shell_command:
-  shutdown_pi: 'sudo shutdown'
-  lg_tv_on: 'irsend send_once testremote key_power && sudo wall lg tv is now on'
-  lg_tv_off: 'irsend send_once testremote key_power && sudeo wall lg tv is now off'
-  apple_tv_on: 'irsend send_once testremote key_power && sudeo wall apple tv is now on'
-  apple_tv_off: 'irsend send_once testremote key_power && sudeo wall apple tv is now off'
+shell_command: !include command_lines.yaml
 
 #add switches
 switch: !include switches.yaml
