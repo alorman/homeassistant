@@ -9,6 +9,6 @@
   host: rasplex_host2
   port: 8081
   
-#  - name: pushbullet
-#    platform: pushbullet
-#    api_key: !secret pushbullet_apikey
+- name: pushbullet
+  platform: pushbullet
+  api_key: !secret pushbullet_apikey
