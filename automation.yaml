@@ -11,14 +11,14 @@
 #       message: "received IR command"
 #       title: "received IR command"
 #       
-- alias: 'Shutdown pi via command line on remote'
-  trigger:
-    platform: event
-    event_type: ir_command_received
-    event_data:
-      button_name: key_power
-  action:
-    service: shell_command.shutdown_pi
+#- alias: 'Shutdown pi via command line on remote'
+#  trigger:
+#    platform: event
+#    event_type: ir_command_received
+#    event_data:
+#      button_name: key_power
+#  action:
+#    service: shell_command.shutdown_pi
     
 - alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
   #hidden: true
@@ -77,4 +77,16 @@
 #  action:
 #    - service: homeassistant.turn_off
 #      entity_id: input_boolean.lg_tv_status
-      
+
+- alias: 'Text Alex about power down'
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: key_power
+  action:
+    - service: notify.twilio_sms
+      data:
+        message: 'Someone pressed the power key'
+        target:
+          - +12022361848
