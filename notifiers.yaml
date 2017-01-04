@@ -9,5 +9,8 @@
   host: rasplex_host2
   port: 8081
   
-- platform: pushbullet
-  api_key: o.eduhIngOGpW8sNqeTzZZOSfT3ou48b2U
+- name: sms_notify
+  platform: twilio_sms
+  account_sid: ACf24269c2df34d247d4e7eaa4e3652cdb
+  auth_token: 2e5ddebf1be4ad28e373d11142d12007
+  from_number: +12028881848
