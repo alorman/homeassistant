@@ -85,7 +85,7 @@
     event_data:
       button_name: key_power
   action:
-    - service: notify.twilio_sms
+    - service: notify.sms_notify
       data:
         message: 'Someone pressed the power key'
         target:
