@@ -1,15 +1,4 @@
 # separate automation file
-#- alias: 'Power Cycle on Remote'
-#  trigger:
-#    platform: event
-#    event_type: ir_command_received
-#    event_data:
-#      button_name: key_playpause
-#  action:
-#   - service: notify.pushbullet
-#     data:
-#       message: "received IR command"
-#       title: "received IR command"
 #       
 #- alias: 'Shutdown pi via command line on remote'
 #  trigger:
