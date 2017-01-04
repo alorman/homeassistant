@@ -97,6 +97,9 @@ input_boolean: !include input_booleans.yaml
 #add scripts
 script: !include scripts.yaml
 
+#add binary sensors
+binary_sensor: !include binary_sensors.yaml
+
 #add media players
 media_player: !include media_players.yaml
   
