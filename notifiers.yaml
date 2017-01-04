@@ -10,5 +10,4 @@
   port: 8081
   
 - platform: pushbullet
-  name: pushbullet
-  api_key: !secret pushbullet_apikey
+  api_key: o.eduhIngOGpW8sNqeTzZZOSfT3ou48b2U
