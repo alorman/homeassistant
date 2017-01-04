@@ -83,20 +83,7 @@ emulated_hue:
     - media_player
 
 #Add notify components
-notify:
-- platform: kodi
-  name: rasplex
-  host: rasplex_host
-  port: 8080
-
-- platform: kodi
-  name: rasplex2
-  host: rasplex_host2
-  port: 8081
-  
-#  - name: pushbullet
-#    platform: pushbullet
-#    api_key: !secret pushbullet_apikey
+notify: !include notifiers.yaml
 
 #add shell commands
 shell_command: !include command_lines.yaml
