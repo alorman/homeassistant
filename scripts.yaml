@@ -14,9 +14,9 @@
     #hidden: true
     sequence:
       - service: homeassistant.turn_off
-      entity_id: input_boolean.lg_tv_status
+        entity_id: input_boolean.lg_tv_status
       - service: homeassistant.turn_off
-      entity_id: media_player.LG_TV
+        entity_id: media_player.LG_TV
       - service: shell_command.lg_tv_off
     
 - apple_tv_on:
