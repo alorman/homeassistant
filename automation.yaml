@@ -25,7 +25,7 @@
  #following state machine for TV on-off
  
 - alias: 'Following state machine for TV'
-  hidden: true
+  #hidden: true
   trigger:
     platform: event
     event_type: ir_command_received
@@ -36,7 +36,7 @@
       entity_id: input_boolean.lg_tv_status
 
 - alias: 'Following state machine for Apple TV'
-  hidden: true
+  #hidden: true
   trigger:
     platform: event
     event_type: ir_command_received
@@ -47,7 +47,7 @@
       entity_id: input_boolean.apple_tv_status
 
 - alias: 'Following state machine for Teac Amplifier'
-  hidden: true
+  #hidden: true
   trigger:
     platform: event
     event_type: ir_command_received
