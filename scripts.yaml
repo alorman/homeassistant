@@ -1,56 +1,56 @@
 #include the scripts
-lg_tv_on:
-  alias: Turn LG TV + State On
-  hidden: true
-  sequence:
-    - service: homeassistant.turn_on
+- lg_tv_on:
+    alias: Turn LG TV + State On
+    #hidden: true
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.lg_tv_status
+      - service: shell_command.lg_tv_on
+      - service: homeassistant.turn_on
+        entity_id: media_player.LG_TV
+    
+- lg_tv_off:
+    alias: Turn LG TV + State Off
+    #hidden: true
+    sequence:
+      - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
-    - service: shell_command.lg_tv_on
-    - service: homeassistant.turn_on
+      - service: homeassistant.turn_off
       entity_id: media_player.LG_TV
+      - service: shell_command.lg_tv_off
     
-lg_tv_off:
-  alias: Turn LG TV + State Off
-  hidden: true
-  sequence:
-    - service: homeassistant.turn_off
-      entity_id: input_boolean.lg_tv_status
-    - service: homeassistant.turn_off
-      entity_id: media_player.LG_TV
-    - service: shell_command.lg_tv_off
+- apple_tv_on:
+    alias: Turn Apple TV + State On
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.apple_tv_status
+      - service: shell_command.apple_tv_on
+      - service: homeassistant.turn_on
+        entity_id: media_player.Apple_TV
     
-apple_tv_on:
-  alias: Turn Apple TV + State On
-  sequence:
-    - service: homeassistant.turn_on
-      entity_id: input_boolean.apple_tv_status
-    - service: shell_command.apple_tv_on
-    - service: homeassistant.turn_on
-      entity_id: media_player.Apple_TV
+- apple_tv_off:
+    alias: Apple TV + State Off
+    sequence:
+      - service: homeassistant.turn_off
+        entity_id: input_boolean.apple_tv_status
+      - service: homeassistant.turn_off
+        entity_id: media_player.Apple_TV
+      - service: shell_command.apple_tv_off
     
-apple_tv_off:
-  alias: Apple TV + State Off
-  sequence:
-    - service: homeassistant.turn_off
-      entity_id: input_boolean.apple_tv_status
-    - service: homeassistant.turn_off
-      entity_id: media_player.Apple_TV
-    - service: shell_command.apple_tv_off
+- teac_amp_on:
+    alias: Turn Teac Amp + State On
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.teac_amp_status
+      - service: shell_command.teac_amp_on
+      - service: homeassistant.turn_on
+        entity_id: media_player.Teac_Amplifier
     
-teac_amp_on:
-  alias: Turn Teac Amp + State On
-  sequence:
-    - service: homeassistant.turn_on
-      entity_id: input_boolean.teac_amp_status
-    - service: shell_command.teac_amp_on
-    - service: homeassistant.turn_on
-      entity_id: media_player.Teac_Amplifier
-    
-teac_amp_off:
-  alias: Turn Teac Amp + State Off
-  sequence:
-    - service: homeassistant.turn_off
-      entity_id: input_boolean.teac_amp_status
-    - service: homeassistant.turn_off
-      entity_id: media_player.Teac_Amplifier
-    - service: shell_command.teac_amp_off
+- teac_amp_off:
+    alias: Turn Teac Amp + State Off
+    sequence:
+      - service: homeassistant.turn_off
+        entity_id: input_boolean.teac_amp_status
+      - service: homeassistant.turn_off
+        entity_id: media_player.Teac_Amplifier
+      - service: shell_command.teac_amp_off
