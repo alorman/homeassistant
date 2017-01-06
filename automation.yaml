@@ -123,16 +123,11 @@
   hide_entity: False
   trigger:
   condition:
-    condition: and
-    conditions:
       - condition: state
         entity_id: climate.bedroom
         service: climate.set_away_mode
         data:
           away_mode: 'false'
-      - condition: state
-        entity_id: input_boolean.nest_away_switch
-        state: 'off'
   action:
     service: notify.sms_notify
     data:
