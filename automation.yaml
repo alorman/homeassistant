@@ -120,13 +120,10 @@
       
 #Nest motion detection
 - alias: 'Nobody Home'
-  hide_entity: False
   trigger:
     platform: state
-    entity_id: climate.bedroom
-    service: climate.set_away_mode
-      data:
-        away_mode: 'false'
+      entity_id: binary_sensor.bedroom_away_mode
+      to: 'off'
   action:
     service: notify.sms_notify
     data:
