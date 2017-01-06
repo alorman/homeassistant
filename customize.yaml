@@ -7,6 +7,14 @@ switch.kitchen_light:
   friendly_name: maybe?
   icong: mdi:helicpter
 
+#name change on nest temps
+sensor.bedroom_thermostat_temperature:
+  friendly_name: Bedroom
+sensor.den_thermostat_temperature:
+  friendly_name: Den
+sensor.office_thermostat_temperature:
+  friendly_name: Office
+
 # hide all the stuff from the nest sensors
 binary_sensor.bedroom_thermostat_fan:
   hidden: true 
