@@ -68,3 +68,15 @@ sensor.office_thermostat_target:
 sensor.yr_symbol:
   friendly_name: Weather
   
+#hide automations used in state machines
+automation.following_state_machine_for_apple_tv:
+  hidden: true
+  
+automation.following_state_machine_for_teac_amplifier:
+  hidden: true
+  
+automation.following_state_machine_for_tv:
+  hidden: true
+
+
+  
