@@ -5,3 +5,7 @@ switch.tv_ir:
 switch.kitchen_light:
   friendly_name: maybe?
   icong: mdi:helicpter
+
+binary_sensor.bedroom_thermostat_has_leaf:
+  hidden: true
+  
