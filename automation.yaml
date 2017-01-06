@@ -95,7 +95,7 @@
           - +12022361848
 
 #nest away toggle test
-- alias: 'Nest Away toggle'
+- alias: 'Nest Away toggle on'
   hide_entity: True
   trigger:
     platform: state
@@ -106,3 +106,15 @@
     entity_id: climate.bedroom
     data:
       away_mode: 'true'
+
+- alias: 'Nest Away toggle off'
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: input_boolean.nest_away_switch
+    state: 'off'
+  action:
+    service: climate.set_away_mode
+    entity_id: climate.bedroom
+    data:
+      away_mode: 'false'
