@@ -111,8 +111,8 @@ script.teac_amp_on:
  
 #hide media center from the main card
 media_player.apple_tv:
-  hidden: true
+  hidden: false
 media_player.lg_tv:
-  hidden: true
+  hidden: false
 media_player.teac_amplifier:
-  hidden: true
+  hidden: false
