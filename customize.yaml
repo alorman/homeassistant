@@ -85,6 +85,20 @@ automation.following_state_machine_for_teac_amplifier:
   
 automation.following_state_machine_for_tv:
   hidden: true
+  
+#test for scripting
+script.apple_tv_off:
+  hidden: true
+script.apple_tv_on:
+  hidden: true
+script.lg_tv_off:
+  hidden: true
+script.lg_tv_on:
+  hidden: true
+script.teac_amp_off:
+  hidden: true
+script.teac_amp_on:
+  hidden: true
 
 
   
