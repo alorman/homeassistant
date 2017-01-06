@@ -3,7 +3,7 @@
 #media player tab
 media_group:
   name: Media Cabinet
-  view: no
+  control: hidden
   entities:
     - media_player.apple_tv
     - media_player.lg_tv
