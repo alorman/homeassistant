@@ -2,10 +2,69 @@
 switch.tv_ir:
   friendly_name: It works
   icon: mdi:kettle
+  
 switch.kitchen_light:
   friendly_name: maybe?
   icong: mdi:helicpter
 
-binary_sensor.bedroom_thermostat_has_leaf:
+# hide all the stuff from the nest sensors
+binary_sensor.bedroom_thermostat_fan
+  hidden: true 
+binary_sensor.bedroom_thermostat_has_leaf
   hidden: true
+binary_sensor.bedroom_thermostat_is_locked
+  hidden: true
+binary_sensor.bedroom_thermostat_is_using_emergency_heat
+  hidden: true
+binary_sensor.bedroom_thermostat_online
+  hidden: true
+binary_sensor.den_thermostat_fan
+  hidden: true
+binary_sensor.den_thermostat_has_leaf
+  hidden: true
+binary_sensor.den_thermostat_is_locked
+  hidden: true
+binary_sensor.den_thermostat_is_using_emergency_heat
+  hidden: true
+binary_sensor.den_thermostat_online
+  hidden: true
+binary_sensor.office_thermostat_fan
+  hidden: true
+binary_sensor.office_thermostat_has_leaf
+  hidden: true
+binary_sensor.office_thermostat_is_locked
+  hidden: true
+binary_sensor.office_thermostat_is_using_emergency_heat
+  hidden: true
+binary_sensor.office_thermostat_online
+  hidden: true
+
+sensor.bedroom_thermostat_humidity
+  hidden: true
+sensor.bedroom_thermostat_hvac_state
+  hidden: true
+sensor.bedroom_thermostat_operation_mode
+  hidden: true
+sensor.bedroom_thermostat_target
+  hidden: true
+sensor.den_thermostat_humidity
+  hidden: true
+sensor.den_thermostat_hvac_state
+  hidden: true
+sensor.den_thermostat_operation_mode
+  hidden: true
+sensor.den_thermostat_target
+  hidden: true
+sensor.office_thermostat_humidity
+  hidden: true
+sensor.office_thermostat_hvac_state
+  hidden: true
+sensor.office_thermostat_operation_mode
+  hidden: true
+sensor.office_thermostat_target
+  hidden: true
+
+#weather symbol
+sensor.yr_symbol
+  friendly_name: Weather
   
