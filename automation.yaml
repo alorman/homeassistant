@@ -8,6 +8,19 @@
 #      button_name: key_power
 #  action:
 #    service: shell_command.shutdown_pi
+
+#hidden objects switch
+-alias: 'Hidden objects switch'
+ hide_entity: True
+ trigger:
+   platform: state
+   event_id: input_boolean.hidden_items
+   state: 'on'
+ action:
+   service: group.set_visibility
+   entity_id: group.hidden_inputs
+   data:
+     visible: False
     
 - alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
   hide_entity: False
