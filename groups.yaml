@@ -1,7 +1,8 @@
 #separate groups file
 
 #media player tab
-Media Cabinet:
+media_group:
+  name: Media Cabinet
   view: yes
   entities:
     - media_player.apple_tv
