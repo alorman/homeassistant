@@ -93,3 +93,16 @@
         message: 'Someone pressed the power key'
         target:
           - +12022361848
+
+#nest away toggle test
+- alias: 'Nest Away toggle'
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: input_boolean.nest_away_switch
+    state: 'on'
+  action:
+    service: climate.set_away_mode
+    entity_id: climate.upstairs
+    data:
+      away_mode: 'true'
