@@ -1,6 +1,8 @@
 #separate groups file
-hidden_inputs:
+Hidden Inputs:
   view: no
+  control: hidden
+  visible: false
   entities:
     - script.apple_tv_off
     - script.apple_tv_on
