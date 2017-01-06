@@ -13,7 +13,3 @@ teac_amp_status:
   name: Teac Amplifier Status
   initial: off
   #hidden: true
-  
-hidden_items:
-  name: Hidden items
-  initial: on
