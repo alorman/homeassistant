@@ -13,3 +13,9 @@ teac_amp_status:
   name: Teac Amplifier Status
   initial: off
   #hidden: true
+
+#nest away toggle test
+nest_away_switch:
+  name: Nest Away Toggle
+  initial: off
+  
