@@ -10,7 +10,7 @@
 #    service: shell_command.shutdown_pi
     
 - alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
-  #hidden: true
+  hide_entity: False
   trigger:
     platform: event
     event_type: ir_command_received
@@ -25,7 +25,7 @@
  #following state machine for TV on-off
  
 - alias: 'Following state machine for TV'
-  #hidden: true
+  hide_entity: True
   trigger:
     platform: event
     event_type: ir_command_received
@@ -36,7 +36,7 @@
       entity_id: input_boolean.lg_tv_status
 
 - alias: 'Following state machine for Apple TV'
-  #hidden: true
+  hide_entity: True
   trigger:
     platform: event
     event_type: ir_command_received
@@ -47,7 +47,7 @@
       entity_id: input_boolean.apple_tv_status
 
 - alias: 'Following state machine for Teac Amplifier'
-  #hidden: true
+  hide_entity: True
   trigger:
     platform: event
     event_type: ir_command_received
@@ -68,6 +68,7 @@
 #      entity_id: input_boolean.lg_tv_status
 
 - alias: 'Text Alex about power down'
+  hide_entity: False
   trigger:
     platform: event
     event_type: ir_command_received
