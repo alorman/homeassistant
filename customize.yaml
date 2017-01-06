@@ -109,5 +109,23 @@ input_boolean.teac_amp_status:
   hidden: true
 #input_boolean.hidden_items
 
-
+#hide scripts
+script.apple_tv_off:
+  hidden: true
+script.apple_tv_on:
+  hidden: true
+script.lg_tv_off:
+  hidden: true
+script.lg_tv_on:
+  hidden: true
+script.teac_amp_off:
+  hidden: true
+script.teac_amp_on:
+  hidden: true
+input_boolean.apple_tv_status:
+  hidden: true
+input_boolean.lg_tv_status:
+  hidden: true
+input_boolean.teac_amp_status:
+  hidden: true
   
