@@ -129,9 +129,8 @@
       - condition: state
         service: climate.set_away_mode
         entity_id: climate.bedroom
-        data: away_mode
-         from: 'false'
-         to: 'true'
+        data:
+          away_mode: 'false'
       - condition: state
         entity_id: input_boolean.nest_away_switch
         state: 'off'
