@@ -14,7 +14,7 @@
   hide_entity: True
   trigger:
     platform: state
-    event_id: input_boolean.hidden_items
+    entity_id: input_boolean.hidden_items
     state: 'on'
   action:
     service: group.set_visibility
