@@ -21,7 +21,6 @@
 #    entity_id: group.hidden_inputs
 #    data:
 #      visible: False
-    
 - alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
   hide_entity: False
   trigger:
@@ -127,8 +126,8 @@
     condition: and
     conditions:
       - condition: state
-        service: climate.set_away_mode
         entity_id: climate.bedroom
+        service: climate.set_away_mode
         data:
           away_mode: 'false'
       - condition: state
