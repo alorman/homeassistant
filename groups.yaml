@@ -1,2 +1,9 @@
 #separate groups file
 
+#media player tab
+Media Cabinet:
+  view: yes
+  entities:
+    - media_player.apple_tv
+    - media_player.lg_tv
+    - media_player.teac_amplifier
