@@ -8,63 +8,63 @@ switch.kitchen_light:
   icong: mdi:helicpter
 
 # hide all the stuff from the nest sensors
-binary_sensor.bedroom_thermostat_fan
+binary_sensor.bedroom_thermostat_fan:
   hidden: true 
-binary_sensor.bedroom_thermostat_has_leaf
+binary_sensor.bedroom_thermostat_has_leaf:
   hidden: true
-binary_sensor.bedroom_thermostat_is_locked
+binary_sensor.bedroom_thermostat_is_locked:
   hidden: true
-binary_sensor.bedroom_thermostat_is_using_emergency_heat
+binary_sensor.bedroom_thermostat_is_using_emergency_heat:
   hidden: true
-binary_sensor.bedroom_thermostat_online
+binary_sensor.bedroom_thermostat_online:
   hidden: true
-binary_sensor.den_thermostat_fan
+binary_sensor.den_thermostat_fan:
   hidden: true
-binary_sensor.den_thermostat_has_leaf
+binary_sensor.den_thermostat_has_leaf:
   hidden: true
-binary_sensor.den_thermostat_is_locked
+binary_sensor.den_thermostat_is_locked:
   hidden: true
-binary_sensor.den_thermostat_is_using_emergency_heat
+binary_sensor.den_thermostat_is_using_emergency_heat:
   hidden: true
-binary_sensor.den_thermostat_online
+binary_sensor.den_thermostat_online:
   hidden: true
-binary_sensor.office_thermostat_fan
+binary_sensor.office_thermostat_fan:
   hidden: true
-binary_sensor.office_thermostat_has_leaf
+binary_sensor.office_thermostat_has_leaf:
   hidden: true
-binary_sensor.office_thermostat_is_locked
+binary_sensor.office_thermostat_is_locked:
   hidden: true
-binary_sensor.office_thermostat_is_using_emergency_heat
+binary_sensor.office_thermostat_is_using_emergency_heat:
   hidden: true
-binary_sensor.office_thermostat_online
+binary_sensor.office_thermostat_online:
   hidden: true
 
-sensor.bedroom_thermostat_humidity
+sensor.bedroom_thermostat_humidity:
   hidden: true
-sensor.bedroom_thermostat_hvac_state
+sensor.bedroom_thermostat_hvac_state:
   hidden: true
-sensor.bedroom_thermostat_operation_mode
+sensor.bedroom_thermostat_operation_mode:
   hidden: true
-sensor.bedroom_thermostat_target
+sensor.bedroom_thermostat_target:
   hidden: true
-sensor.den_thermostat_humidity
+sensor.den_thermostat_humidity:
   hidden: true
-sensor.den_thermostat_hvac_state
+sensor.den_thermostat_hvac_state:
   hidden: true
-sensor.den_thermostat_operation_mode
+sensor.den_thermostat_operation_mode:
   hidden: true
-sensor.den_thermostat_target
+sensor.den_thermostat_target:
   hidden: true
-sensor.office_thermostat_humidity
+sensor.office_thermostat_humidity:
   hidden: true
-sensor.office_thermostat_hvac_state
+sensor.office_thermostat_hvac_state:
   hidden: true
-sensor.office_thermostat_operation_mode
+sensor.office_thermostat_operation_mode:
   hidden: true
-sensor.office_thermostat_target
+sensor.office_thermostat_target:
   hidden: true
 
 #weather symbol
-sensor.yr_symbol
+sensor.yr_symbol:
   friendly_name: Weather
   
