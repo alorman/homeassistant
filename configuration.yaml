@@ -102,3 +102,6 @@ media_player: !include media_players.yaml
   
 # source separate automations file
 automation: !include automation.yaml   
+
+#call groups separately
+grouPl !include groups.yaml
