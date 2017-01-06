@@ -115,7 +115,7 @@
   action:
     service: climate.set_away_mode
     entity_id: climate.bedroom
-    data:
+    event_data:
       away_mode: 'false'
       
 #Nest motion detection
@@ -123,7 +123,7 @@
   trigger:
     platform: event
     entity_id: climate.bedroom
-    data:
+    event_type: new_state
       away_mode: 'true'
   action:
     service: notify.sms_notify
