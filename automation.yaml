@@ -123,18 +123,16 @@
 - alias: 'Nobody Home'
   hide_entity: False
   trigger:
-    platform: state
-    service: climate.set_away_mode
-    entity_id: climate.bedroom
-    data:
-      away_mode:
-      from: 'false'
-      to: 'true'
   condition:
     condition: and
     conditions:
       - condition: state
-        platform: state
+        service: climate.set_away_mode
+        entity_id: climate.bedroom
+        data: away_mode
+         from: 'false'
+         to: 'true'
+      - condition: state
         entity_id: input_boolean.nest_away_switch
         state: 'off'
   action:
