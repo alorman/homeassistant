@@ -124,7 +124,7 @@
     platform: event
     entity_id: climate.bedroom
     event_type: new_state
-      away_mode: 'true'
+      data: away_mode='true'
   action:
     service: notify.sms_notify
     data:
