@@ -1,7 +1,7 @@
 #include the scripts
 lg_tv_on:
   alias: Turn LG TV + State On
-  #hidden: true
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_on
       entity_id: input_boolean.lg_tv_status
@@ -11,7 +11,7 @@ lg_tv_on:
     
 lg_tv_off:
   alias: Turn LG TV + State Off
-  #hidden: true
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.lg_tv_status
@@ -21,6 +21,7 @@ lg_tv_off:
     
 apple_tv_on:
   alias: Turn Apple TV + State On
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_on
       entity_id: input_boolean.apple_tv_status
@@ -30,6 +31,7 @@ apple_tv_on:
     
 apple_tv_off:
   alias: Apple TV + State Off
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.apple_tv_status
@@ -39,6 +41,7 @@ apple_tv_off:
     
 teac_amp_on:
   alias: Turn Teac Amp + State On
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_on
       entity_id: input_boolean.teac_amp_status
@@ -48,6 +51,7 @@ teac_amp_on:
     
 teac_amp_off:
   alias: Turn Teac Amp + State Off
+  hide_entity: True
   sequence:
     - service: homeassistant.turn_off
       entity_id: input_boolean.teac_amp_status
