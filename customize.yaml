@@ -87,18 +87,18 @@ automation.following_state_machine_for_tv:
   hidden: true
   
 #hide the scripts
-script.apple_tv_off:
-  hidden: true
-script.apple_tv_on:
-  hidden: true
-script.lg_tv_off:
-  hidden: true
-script.lg_tv_on:
-  hidden: true
-script.teac_amp_off:
-  hidden: true
-script.teac_amp_on:
-  hidden: true
+#script.apple_tv_off:
+#  hidden: true
+#script.apple_tv_on:
+#  hidden: true
+#script.lg_tv_off:
+#  hidden: true
+#script.lg_tv_on:
+#  hidden: true
+#script.teac_amp_off:
+#  hidden: true
+#script.teac_amp_on:
+#  hidden: true
   
 #hide booleans
 input_boolean.apple_tv_status:
