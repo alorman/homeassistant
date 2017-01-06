@@ -5,6 +5,6 @@ media_group:
   name: Media Cabinet
   control: hidden
   entities:
-    - media_player.apple_tv
-    - media_player.lg_tv
+    - automation.set_a_scene_with_the_philips_hue_bulbs_when_we_watch_tv_with_the_harmony
+    - automation.text_alex_about_power_down
     - media_player.teac_amplifier
