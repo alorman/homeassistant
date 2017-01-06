@@ -1,0 +1,14 @@
+#separate groups file
+hidden_inputs:
+  view: no
+  entities:
+    - script.apple_tv_off
+    - script.apple_tv_on
+    - script.lg_tv_off
+    - script.lg_tv_on
+    - script.teac_amp_off
+    - script.teac_amp_on
+    - input_boolean.apple_tv_status
+    - input_boolean.lg_tv_status
+    - input_boolean.teac_amp_status
+    
