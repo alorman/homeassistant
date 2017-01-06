@@ -121,9 +121,10 @@
 #Nest motion detection
 - alias: 'Nobody Home'
   trigger:
-    platform: state
-    entity_id: climate.bedroom_away_mode
-    to: 'off'
+    platform: event
+    entity_id: climate.bedroom
+    data:
+      away_mode: 'true'
   action:
     service: notify.sms_notify
     data:
