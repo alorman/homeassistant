@@ -15,7 +15,7 @@ teac_amp_status:
   #hidden: true
 
 #nest away toggle test
-nest_away_switch:
-  name: Nest Away Toggle
+arm_alarm:
+  name: Away From Home
   initial: off
   
