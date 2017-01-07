@@ -119,14 +119,14 @@
       away_mode: 'false'
       
 #Nest motion detection
-- alias: 'Nobody Home'
-  trigger:
-    platform: state
-    entity_id: climate.bedroom_away_mode
-    state: 'off'
-  action:
-    service: notify.sms_notify
-    data:
-      message: 'In your base, stealing your mans'
-      target:
-        - +12022361848
+#- alias: 'Nobody Home'
+#  trigger:
+#    platform: state
+#    entity_id: climate.bedroom_away_mode
+#    state: 'off'
+#  action:
+#    service: notify.sms_notify
+#    data:
+#      message: 'In your base, stealing your mans'
+#      target:
+#        - +12022361848
