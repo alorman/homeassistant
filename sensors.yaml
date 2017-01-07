@@ -1,0 +1,18 @@
+#sensors to include
+
+#weather platform
+- platform: yr
+
+#nest bedroom
+- platform: template
+  sensors:
+     bedroom_away_mode:
+       entity_id: climate.bedroom
+       value_template: "{{ is_state_attr('climate.bedroom', 'away_mode', 'on') }}"
+       
+#nest den       
+- platform: template
+  sensors:
+     den_away_mode:
+       entity_id: climate.den
+       value_template: "{{ is_state_attr('climate.den', 'away_mode', 'on') }}"

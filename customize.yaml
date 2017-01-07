@@ -93,6 +93,8 @@ input_boolean.lg_tv_status:
   hidden: true
 input_boolean.teac_amp_status:
   hidden: true
+input_boolean.nest_away_switch:
+  hidden: true
 #input_boolean.hidden_items
 
 #hide scripts
