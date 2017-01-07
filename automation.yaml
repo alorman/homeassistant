@@ -8,7 +8,6 @@
 #      button_name: key_power
 #  action:
 #    service: shell_command.shutdown_pi
-
 - alias: 'Set a scene with the philips hue bulbs when we watch tv with the harmony'
   hide_entity: False
   trigger:
@@ -94,17 +93,17 @@
     data:
       away_mode: 'true'
 
-- alias: 'Nest Away toggle off'
-  hide_entity: True
-  trigger:
-    platform: state
-    entity_id: input_boolean.nest_away_switch
-    state: 'off'
-  action:
-    service: climate.set_away_mode
-    entity_id: climate.bedroom
-    event_data:
-      away_mode: 'false'  
+#- alias: 'Nest Away toggle off'
+#  hide_entity: True
+#  trigger:
+#    platform: state
+#    entity_id: input_boolean.nest_away_switch
+#    state: 'off'
+#  action:
+#    service: climate.set_away_mode
+#    entity_id: climate.bedroom
+#    event_data:
+#      away_mode: 'false'  
 #Nest motion detection
 #- alias: 'Nobody Home'
 #  trigger:
