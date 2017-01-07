@@ -80,39 +80,20 @@
         target:
           - +12022361848
 
-#nest away toggle test
-- alias: 'Nest Away toggle on'
-  hide_entity: True
+#Nest motion detection
+- alias: 'Nobody Home'
   trigger:
     platform: state
-    entity_id: input_boolean.nest_away_switch
+    entity_id: sensor.bedroom_away_mode
+    from: 'False'
+    to: 'True'
+  condition:
+    condition: state
+    entity_id: input_boolean.arm_alarm
     state: 'on'
   action:
-    service: climate.set_away_mode
-    entity_id: climate.bedroom
+    service: notify.sms_notify
     data:
-      away_mode: 'true'
-
-#- alias: 'Nest Away toggle off'
-#  hide_entity: True
-#  trigger:
-#    platform: state
-#    entity_id: input_boolean.nest_away_switch
-#    state: 'off'
-#  action:
-#    service: climate.set_away_mode
-#    entity_id: climate.bedroom
-#    event_data:
-#      away_mode: 'false'  
-#Nest motion detection
-#- alias: 'Nobody Home'
-#  trigger:
-#    platform: state
-#    entity_id: climate.bedroom_away_mode
-#    state: 'off'
-#  action:
-#    service: notify.sms_notify
-#    data:
-#      message: 'In your base, stealing your mans'
-#      target:
-#        - +12022361848
+      message: 'In your base, stealing your mans'
+      target:
+        - +12022361848
