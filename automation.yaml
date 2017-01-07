@@ -85,8 +85,8 @@
   trigger:
     platform: state
     entity_id: sensor.bedroom_away_mode, sensor.den_away_mode
-    from: 'False'
-    to: 'True'
+    from: 'True'
+    to: 'False'
   condition:
     condition: state
     entity_id: input_boolean.arm_alarm
