@@ -122,23 +122,23 @@ media_player.teac_amplifier:
 #hide the Hue button followers
 light.dimmer_2:
   hidden: true
-light.dimmer_3
+light.dimmer_3:
   hidden: true
-light.dimmer_4
+light.dimmer_4:
   hidden: true
 
 #hide the hue bulbs themselves. we'll go for scenes instead
-light.hue_color_lamp_1
+light.hue_color_lamp_1:
   hidden: true
-light.hue_color_lamp_2
+light.hue_color_lamp_2:
   hidden: true
-light.hue_color_lamp_3
+light.hue_color_lamp_3:
   hidden: true
-light.hue_white_lamp_1
+light.hue_white_lamp_1:
   hidden: true
-light.hue_white_lamp_2
+light.hue_white_lamp_2:
   hidden: true
-light.livingcolors_1
+light.livingcolors_1:
   hidden: true
-light.livingcolors_2
+light.livingcolors_2:
   hidden: true
