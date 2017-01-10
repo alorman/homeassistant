@@ -29,7 +29,7 @@
     platform: event
     event_type: ir_command_received
     event_data:
-      button_name: key_playpause
+      button_name: 
   action:
     - service: homeassistant.toggle
       entity_id: input_boolean.lg_tv_status
@@ -40,9 +40,9 @@
     platform: event
     event_type: ir_command_received
     event_data:
-      button_name: key_playpause
+      button_name: apple_tv_playpause
   action:
-    - service: homeassistant.toggle
+    - service: homeassistant.turnon
       entity_id: input_boolean.apple_tv_status
 
 - alias: 'Following state machine for Teac Amplifier'
@@ -51,7 +51,7 @@
     platform: event
     event_type: ir_command_received
     event_data:
-      button_name: key_playpause
+      button_name: teac_power
   action:
     - service: homeassistant.toggle
       entity_id: input_boolean.teac_amp_status
