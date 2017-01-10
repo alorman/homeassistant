@@ -118,3 +118,27 @@ media_player.lg_tv:
   hidden: false
 media_player.teac_amplifier:
   hidden: false
+
+#hide the Hue button followers
+light.dimmer_2:
+  hidden: true
+light.dimmer_3
+  hidden: true
+light.dimmer_4
+  hidden: true
+
+#hide the hue bulbs themselves. we'll go for scenes instead
+light.hue_color_lamp_1
+  hidden: true
+light.hue_color_lamp_2
+  hidden: true
+light.hue_color_lamp_3
+  hidden: true
+light.hue_white_lamp_1
+  hidden: true
+light.hue_white_lamp_2
+  hidden: true
+light.livingcolors_1
+  hidden: true
+light.livingcolors_2
+  hidden: true
