@@ -142,3 +142,7 @@ light.livingcolors_1:
   hidden: true
 light.livingcolors_2:
   hidden: true
+
+#TP Link lamp in den
+switch.table_light:
+  icon: mdi:lamp
