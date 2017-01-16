@@ -12,3 +12,7 @@
       command_on: "test1"
       command_off: "test2"
       friendly_name: Kitchen Light Switch
+
+- platform: tplink
+  host: 192.168.0.91
+  name: Table Light
