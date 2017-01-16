@@ -21,11 +21,12 @@
 - platform: flux
   lights:
     - light.den
+    - light.kitchen
   name: Night Shift
-#  start_time: '7:00' commented out because sunrise
+  start_time: '7:00'
   stop_time:  '23:00'
   start_colortemp: 6500
-  sunset_colortemp: 3200
+  sunset_colortemp: 4500
   stop_colortemp: 2000
-  brightness: 200
+  brightness: 500
   mode: xy
