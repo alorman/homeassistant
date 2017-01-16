@@ -141,6 +141,6 @@ switch.table_light:
   icon: mdi:lamp
 
 #flux switch
-switch.flux_control:
+switch.night_shift:
   icon: mdi:weather-night
   
