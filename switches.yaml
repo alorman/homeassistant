@@ -25,6 +25,7 @@
 #  start_time: '7:00' commented out because sunrise
   stop_time:  '23:00'
   start_colortemp: 6500
+  sunset_colortemp: 3200
   stop_colortemp: 1900
-  brightness: 200
-  
+  brightness: 50
+  mode: xy
