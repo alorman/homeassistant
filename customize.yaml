@@ -142,6 +142,5 @@ switch.table_light:
 
 #flux switch
 switch.flux_control
-  friendly_name: Night Shift
   icon: mdi:weather-night
   
