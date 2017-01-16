@@ -25,8 +25,8 @@
   name: Night Shift
   start_time: '7:00'
   stop_time:  '23:00'
-  start_colortemp: 6500
-  sunset_colortemp: 4500
-  stop_colortemp: 2000
+  start_colortemp: 7500
+  sunset_colortemp: 5500
+  stop_colortemp: 3500
   brightness: 250
   mode: xy
