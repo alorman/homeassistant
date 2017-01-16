@@ -26,5 +26,5 @@
   stop_time:  '23:00'
   start_colortemp: 6500
   stop_colortemp: 1900
-  brightenss: 200
+  brightness: 200
   
