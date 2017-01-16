@@ -21,7 +21,7 @@
 - platform: flux
   lights:
     - light.den
-  name: Flux Control
+  name: Night Shift
 #  start_time: '7:00' commented out because sunrise
   stop_time:  '23:00'
   start_colortemp: 6500
