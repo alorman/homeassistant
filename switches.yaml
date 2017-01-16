@@ -16,3 +16,15 @@
 - platform: tplink
   host: 192.168.0.91
   name: Table Light
+
+#adding flux
+- platform: flux
+  lights:
+    - light.den
+  name: Flux Control
+#  start_time: '7:00' commented out because sunrise
+  stop_time:  '23:00'
+  start_colortemp: 6500
+  stop_colortemp: 1900
+  brightenss: 200
+  
