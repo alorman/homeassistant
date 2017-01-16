@@ -28,5 +28,5 @@
   start_colortemp: 6500
   sunset_colortemp: 4500
   stop_colortemp: 2000
-  brightness: 500
+  brightness: 250
   mode: xy
