@@ -11,7 +11,7 @@
     - light.bedroom
   name: Night Shift
   start_time: '7:00'
-  stop_time:  '19:20'
+  stop_time:  '23:00'
   start_colortemp: 7500
   sunset_colortemp: 5000
   stop_colortemp: 3500
