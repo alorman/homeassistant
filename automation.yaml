@@ -110,6 +110,6 @@
     state: 'on'
   action:
     service: light.hue_activate_scene
-      data:
-        group_name: "Den"
-        scene_name: "Den Mid Warm"
+    data:
+      group_name: "Den"
+      scene_name: "Den Mid Warm"
