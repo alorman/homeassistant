@@ -144,4 +144,4 @@
     service: light.hue_activate_scene
     data:
       group_name: "Kitchen"
-      scene_name: "Kitchen Full"
+      scene_name: "Kitchen Full Bright"
