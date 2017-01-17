@@ -17,3 +17,4 @@
   stop_colortemp: 3500
   brightness: 190
   mode: xy
+  initial_state: true
