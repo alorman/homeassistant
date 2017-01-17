@@ -145,10 +145,9 @@ light.livingcolors_2:
 #TP Link lamp in den
 switch.table_light:
   icon: mdi:lamp
+  sensor_class: light
 
 #flux switch
 switch.night_shift:
   icon: mdi:weather-night
-  sensor_class: light
-  assumed_state: on
   
