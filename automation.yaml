@@ -96,3 +96,20 @@
       message: 'In your base, stealing your mans'
       target:
         - +12022361848
+
+#Return lights to preset color temp when Night Shift goes off
+- alias: 'Night Shift Off'
+  trigger:
+    platform: state
+    entity_id: switch.night_shift
+    from: 'on'
+    to: 'off'
+  condition:
+    condition: state
+    entity_id: light.den
+    state: 'on'
+  action:
+    service: light.hue_activate_scene
+      data:
+        group_name: "Den"
+        scene_name: "Den Mid Warm"
