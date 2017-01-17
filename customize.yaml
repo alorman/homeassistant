@@ -149,4 +149,6 @@ switch.table_light:
 #flux switch
 switch.night_shift:
   icon: mdi:weather-night
+  sensor_class: light
+  assumed_state: on
   
