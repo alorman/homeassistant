@@ -1,18 +1,11 @@
 #customize display icons
-switch.tv_ir:
-  friendly_name: It works
-  icon: mdi:kettle
-  
-switch.kitchen_light:
-  friendly_name: maybe?
-  icong: mdi:helicpter
 
 #name change on nest temps
 sensor.bedroom_thermostat_temperature:
   friendly_name: Bedroom
 sensor.den_thermostat_temperature:
   friendly_name: Den
-sensor.office_thermostat_temperature:
+sensor._thermostat_temperature:
   friendly_name: Office
 
 # hide all the stuff from the nest sensors
@@ -74,16 +67,22 @@ sensor.office_thermostat_target:
 
 #weather symbol
 sensor.yr_symbol:
-  friendly_name: Weather
+  friendly_name: Boston
   
 #hide automations used in state machines
 automation.following_state_machine_for_apple_tv:
   hidden: true
-  
 automation.following_state_machine_for_teac_amplifier:
   hidden: true
-  
 automation.following_state_machine_for_tv:
+  hidden: true
+
+#hide automation used in Night Shift mode
+automation.night_shift_off_bedroom:
+  hidden: true
+automation.night_shift_off_den:
+  hidden: true
+automation.night_shift_off_kitchen:
   hidden: true
   
 #hide booleans
@@ -118,3 +117,37 @@ media_player.lg_tv:
   hidden: false
 media_player.teac_amplifier:
   hidden: false
+
+#hide the Hue button followers
+light.dimmer_2:
+  hidden: true
+light.dimmer_3:
+  hidden: true
+light.dimmer_4:
+  hidden: true
+
+#hide the hue bulbs themselves. we'll go for scenes instead
+light.hue_color_lamp_1:
+  hidden: true
+light.hue_color_lamp_2:
+  hidden: true
+light.hue_color_lamp_3:
+  hidden: true
+light.hue_white_lamp_1:
+  hidden: true
+light.hue_white_lamp_2:
+  hidden: true
+light.livingcolors_1:
+  hidden: true
+light.livingcolors_2:
+  hidden: true
+
+#TP Link lamp in den
+switch.table_light:
+  icon: mdi:lamp
+  sensor_class: light
+
+#flux switch
+switch.night_shift:
+  icon: mdi:weather-night
+  

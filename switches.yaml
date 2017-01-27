@@ -1,14 +1,19 @@
 #File contains switches
-- platform: command_line
-  switches:
-    tv_ir:
-      command_on: "irsend send_once testremote key_power && sudo wall irsend power key"
-      command_off: "irsend send_once testremote key_power && sudo wall irsend power key"
-      friendly_name: Living Room TV 
+- platform: tplink
+  host: 192.168.0.91
+  name: Table Light
 
-- platform: command_line
-  switches:
-    kitchen_light:
-      command_on: "test1"
-      command_off: "test2"
-      friendly_name: Kitchen Light Switch
+#adding flux
+- platform: flux
+  lights:
+    - light.den
+    - light.kitchen
+    - light.bedroom
+  name: Night Shift
+  start_time: '7:00'
+  stop_time:  '23:00'
+  start_colortemp: 7500
+  sunset_colortemp: 5000
+  stop_colortemp: 3500
+  brightness: 255
+  mode: xy
