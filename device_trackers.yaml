@@ -2,6 +2,6 @@
 
 #track the teac amplifier status
 platform: ping
-  hosts:
-    hostone: 192.168.0.92
+hosts:
+  hostone: 192.168.0.92
   interval_seconds: 10
