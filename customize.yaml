@@ -40,6 +40,9 @@ binary_sensor.office_thermostat_is_using_emergency_heat:
 binary_sensor.office_thermostat_online:
   hidden: true
 
+sensor.bedroom_away_mode:
+  hdden: true
+
 sensor.bedroom_thermostat_humidity:
   hidden: true
 sensor.bedroom_thermostat_hvac_state:
@@ -64,6 +67,10 @@ sensor.office_thermostat_operation_mode:
   hidden: true
 sensor.office_thermostat_target:
   hidden: true
+  
+sensor.den_away_mode:
+  friendly_name: Away Mode
+  icon: mdi:nest-thermostat
 
 #weather symbol
 sensor.yr_symbol:
