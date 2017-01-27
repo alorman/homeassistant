@@ -93,6 +93,9 @@ shell_command: !include command_lines.yaml
 #add switches
 switch: !include switches.yaml
 
+#add binary sensors
+binary_sensor: !include binary_sensors.yaml
+
 #add input booleans
 input_boolean: !include input_booleans.yaml
 
