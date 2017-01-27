@@ -1,0 +1,6 @@
+# separate device tracker file
+
+#track the teac amplifier status
+platform: ping
+  hosts:
+  hostone: 192.168.0.92
