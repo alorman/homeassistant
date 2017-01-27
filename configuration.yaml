@@ -84,6 +84,9 @@ emulated_hue:
 #Add notify components
 notify: !include notifiers.yaml
 
+#Add device trackers
+device_tracker: !include device_trackers.yaml
+
 #add shell commands
 shell_command: !include command_lines.yaml
 
