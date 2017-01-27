@@ -7,3 +7,11 @@
   sensor_class: connectivity
   payload_on: 1
   payload_off: 0
+
+#ping the apple tv to see if it's on
+- platform: command_line
+  command: 'ping -c 1 192.168.0.98 | grep "1 received" | wc -l'
+  name: 'is_apple_tv_online'
+  sensor_class: connectivity
+  payload_on: 1
+  payload_off: 0
