@@ -23,7 +23,7 @@
       #volume_down: "irsend send_once testremote key_volumedown && sudo wall apple tv down"
       #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
   attributes:
-    state: input_boolean.apple_tv_status
+    state: binary_sensor.is_apple_tv_online
 
 - platform: universal
   name: Teac Amplifier
@@ -36,4 +36,4 @@
       #volume_down: "irsend send_once testremote key_volumedown && sudo wall apple tv down"
       #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
   attributes:
-    state: input_boolean.teac_amp_status
+    state: binary_sensor.is_teac_amp_online
