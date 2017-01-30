@@ -147,7 +147,7 @@
       scene_name: "Kitchen Full Bright"
       
 #turning the flux switch off for each light
-- alias: 'Night shift off den'
+- alias: 'Night shift on den'
   trigger:
     platform: state
     entity_id: light.den
@@ -156,3 +156,35 @@
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift
+
+#reverse back on when engaged
+- alias: 'Night shift off den'
+  trigger:
+    platform: state
+    entity_id: light.den
+    from: 'off'
+    to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.night_shift
+      
+- alias: 'Night shift off kitchen'
+  trigger:
+    platform: state
+    entity_id: light.kitchen
+    from: 'on'
+    to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.night_shift_kitchen
+
+#reverse back on when engaged
+- alias: 'Night shift on kitchen'
+  trigger:
+    platform: state
+    entity_id: light.kitchen
+    from: 'off'
+    to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.night_shift_kitchen
