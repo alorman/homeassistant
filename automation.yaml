@@ -145,3 +145,14 @@
     data:
       group_name: "Kitchen"
       scene_name: "Kitchen Full Bright"
+      
+#turning the flux switch off for each light
+- alias: 'Night shift off den'
+  trigger:
+    platform: state
+    entity_id: light.den
+    from: 'on'
+    to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.night_shift
