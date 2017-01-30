@@ -23,4 +23,4 @@ arm_alarm:
 night_shift:
   name: Night Shift Mode
   initial: on
-  icon: mdi:lamp
+  icon: mdi:weather-night
