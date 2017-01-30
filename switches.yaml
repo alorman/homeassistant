@@ -3,7 +3,7 @@
   host: 192.168.0.91
   name: Table Light
 
-#adding flux
+#flux for den
 - platform: flux
   lights:
     - light.den
@@ -15,11 +15,25 @@
   stop_colortemp: 3500
   brightness: 255
   mode: xy
-#adding flux
+  
+#kitchen flux setting
 - platform: flux
   lights:
     - light.kitchen
   name: Night Shift Kitchen
+  start_time: '7:00'
+  stop_time:  '23:00'
+  start_colortemp: 7500
+  sunset_colortemp: 5000
+  stop_colortemp: 3500
+  brightness: 255
+  mode: xy
+
+#bedroom flux setting
+- platform: flux
+  lights:
+    - light.bedroom
+  name: Night Shift bedroom
   start_time: '7:00'
   stop_time:  '23:00'
   start_colortemp: 7500
