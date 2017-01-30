@@ -154,7 +154,7 @@
     is: 'off'
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.night_shift
+      entity_id: switch.night_shift_den
 
 #reverse back on when engaged
 - alias: 'Night shift off den'
@@ -168,7 +168,7 @@
     state: 'on'
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.night_shift
+      entity_id: switch.night_shift_den
       
 #night shift for the kitchen       
 - alias: 'Night shift off kitchen'
