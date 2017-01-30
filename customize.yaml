@@ -181,3 +181,8 @@ binary_sensor.is_apple_tv_online:
   hidden: true
 binary_sensor.is_teac_amp_online:
   hidden: true
+
+automation.set_a_scene_with_the_philips_hue_bulbs_when_we_watch_tv_with_the_harmony:
+  hidden: true
+automation.text_alex_about_power_down:
+  hidden: true
