@@ -16,4 +16,4 @@
   sunset_colortemp: 5000
   stop_colortemp: 3500
   brightness: 255
-  mode: rgb
+  mode: mired
