@@ -164,10 +164,15 @@
     entity_id: light.den
     from: 'off'
     to: 'on'
+  condition:
+    condition: state
+    entity_id: input_boolean.night_shift
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift
       
+#night shift for the kitchen       
 - alias: 'Night shift off kitchen'
   trigger:
     platform: state
@@ -185,11 +190,15 @@
     entity_id: light.kitchen
     from: 'off'
     to: 'on'
+  condition:
+    condition: state
+    entity_id: input_boolean.night_shift
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_kitchen
 
-#den lights flux
+#bedroom lights flux
 - alias: 'Night shift off bedroom'
   trigger:
     platform: state
@@ -207,6 +216,10 @@
     entity_id: light.bedroom
     from: 'off'
     to: 'on'
+  condition:
+    condition: state
+    entity_id: input_boolean.night_shift
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_bedroom
