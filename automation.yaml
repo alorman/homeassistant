@@ -188,3 +188,25 @@
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_kitchen
+
+#den lights flux
+- alias: 'Night shift off bedroom'
+  trigger:
+    platform: state
+    entity_id: light.bedroom
+    from: 'on'
+    to: 'off'
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.night_shift_bedroom
+
+#reverse back on when engaged
+- alias: 'Night shift on bedroom'
+  trigger:
+    platform: state
+    entity_id: light.bedroom
+    from: 'off'
+    to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.night_shift_bedroom
