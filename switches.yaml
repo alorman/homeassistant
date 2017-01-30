@@ -7,8 +7,6 @@
 - platform: flux
   lights:
     - light.den
-    - light.kitchen
-    - light.bedroom
   name: Night Shift
   start_time: '7:00'
   stop_time:  '23:00'
