@@ -89,8 +89,6 @@ automation.night_shift_off_bedroom:
   hidden: true
 automation.night_shift_off_den:
   hidden: true
-automation.night_shift_off_kitchen:
-  hidden: true
 automation.night_shift_on_kitchen:
   hidden: true
 automation.night_shift_off_kitchen:
