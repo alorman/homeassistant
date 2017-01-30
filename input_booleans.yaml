@@ -18,4 +18,9 @@ teac_amp_status:
 arm_alarm:
   name: Away From Home
   initial: off
-  
+
+#night shift master toggle
+night_shift:
+  name: Night Shift Mode
+  initial: on
+  icon: mdi:lamp
