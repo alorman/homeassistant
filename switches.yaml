@@ -7,7 +7,7 @@
 - platform: flux
   lights:
     - light.den
-  name: Night Shift
+  name: Night Shift den
   start_time: '7:00'
   stop_time:  '23:00'
   start_colortemp: 7500
