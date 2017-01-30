@@ -91,7 +91,15 @@ automation.night_shift_off_den:
   hidden: true
 automation.night_shift_off_kitchen:
   hidden: true
-  
+automation.night_shift_on_kitchen:
+  hidden: true
+automation.night_shift_off_kitchen:
+  hidden: true
+automation.night_shift_off_den_2:
+  hidden: true
+automation.night_shift_on_den:
+  hidden: true
+
 #hide booleans
 input_boolean.apple_tv_status:
   hidden: true
