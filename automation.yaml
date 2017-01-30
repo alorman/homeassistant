@@ -161,7 +161,8 @@
   trigger:
     platform: state
     entity_id: light.den
-    state: 'on'
+    from: 'off'
+    to: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
@@ -175,7 +176,8 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    state: 'off'
+    from: 'on'
+    to: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_kitchen
@@ -199,7 +201,8 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    state: 'off'
+    from: 'on'
+    to: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_bedroom
@@ -209,7 +212,8 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    state: 'on'
+    from: 'off'
+    to: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
