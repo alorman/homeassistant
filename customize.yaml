@@ -157,8 +157,6 @@ switch.table_light:
 #flux switch
 #switch.night_shift:
 #  icon: mdi:weather-night
-input_boolean.night_shift
-  icon: mdi:weather-night
 
 #hide the on off data from the pingers for the media
 binary_sensor.is_apple_tv_online:
