@@ -87,6 +87,9 @@ notify: !include notifiers.yaml
 #add shell commands
 shell_command: !include command_lines.yaml
 
+#add device trackers
+device_tracker: !include device_tracker.yaml
+
 #add switches
 switch: !include switches.yaml
 
