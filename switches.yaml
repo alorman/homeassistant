@@ -1,4 +1,6 @@
 #File contains switches
+  
+# den table light
 - platform: tplink
   host: 192.168.0.91
   name: Table Light

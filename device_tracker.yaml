@@ -1,0 +1,4 @@
+# device tracker file
+
+#add bluetooth to track the apple tv
+platform: bluetooth_tracker

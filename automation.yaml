@@ -221,3 +221,32 @@
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_bedroom
+
+#set the nests to away and the lights to off 30 minutes after bluetooth disconnects
+- alias: 'Away on iPhone'
+  trigger:
+    platform: state
+    entity_id: device_tracker.alexs_iphone
+    from: 'home'
+    to: 'away'
+  action:
+    - delay: '00:00:30'
+    - service: light.turn_off
+    - service: switch.turn_off
+      entity_id: switch.table_light
+    - service: climate.set_hold_mode
+      data:
+        hold_mode: 'away'
+
+- alias: 'Home on iPhone'
+  trigger:
+    platform: state
+    entity_id: device_tracker.alexs_iphone
+    from: 'away'
+    to: 'home'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.table_light
+    - service: climate.set_hold_mode
+      data:
+        hold_mode: 'home'

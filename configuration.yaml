@@ -31,7 +31,7 @@ http:
 updater:
 
 # Discover some devices automatically
-discovery:
+#discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -87,8 +87,16 @@ notify: !include notifiers.yaml
 #add shell commands
 shell_command: !include command_lines.yaml
 
+#add device trackers
+device_tracker: !include device_tracker.yaml
+
 #add switches
 switch: !include switches.yaml
+
+#main hue hub (since netdisco seems to be unhappy)
+light:
+  platform: hue
+  host: 192.168.0.94
 
 #add input booleans
 input_boolean: !include input_booleans.yaml

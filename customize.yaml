@@ -41,7 +41,7 @@ binary_sensor.office_thermostat_online:
   hidden: true
 
 sensor.bedroom_away_mode:
-  hdden: true
+  hidden: true
 
 sensor.bedroom_thermostat_humidity:
   hidden: true
@@ -185,4 +185,18 @@ binary_sensor.is_teac_amp_online:
 automation.set_a_scene_with_the_philips_hue_bulbs_when_we_watch_tv_with_the_harmony:
   hidden: true
 automation.text_alex_about_power_down:
+  hidden: true
+
+#hide the bits added by device tracker
+sensor.apple_tv_power:
+  hidden: true
+device_tracker.living_room_apple_tv:
+  hidden: true
+
+#hide the speedtest business
+sensor.speedtest_download:
+  hidden: true
+sensor.speedtest_ping:
+  hidden: true
+sensor.speedtest_upload:
   hidden: true
