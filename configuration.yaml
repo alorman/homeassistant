@@ -93,6 +93,11 @@ device_tracker: !include device_tracker.yaml
 #add switches
 switch: !include switches.yaml
 
+#main hue hub (since netdisco seems to be unhappy)
+light:
+  platform: hue
+  host: 192.168.0.94
+
 #add input booleans
 input_boolean: !include input_booleans.yaml
 
