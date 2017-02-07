@@ -7,8 +7,6 @@ sensor.den_thermostat_temperature:
   friendly_name: Den
 sensor._thermostat_temperature:
   friendly_name: Office
-sensor.bedroom_away_mode:
-  hidden: true
 
 # hide all the stuff from the nest sensors
 binary_sensor.bedroom_thermostat_fan:
