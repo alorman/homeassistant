@@ -23,3 +23,10 @@
     apple_tv_power:
       entity_id: device_tracker.living_room_apple_tv
       value_template: "{% if is_state('device_tracker.living_room_apple_tv', 'home') %}on{% else %}off{% endif %}"
+
+#speed test. To annoy comcast
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
