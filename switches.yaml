@@ -1,4 +1,10 @@
 #File contains switches
+
+#main hue hub (since netdisco seems to be unhappy)
+- platform: hue
+  host: 192.168.0.94
+  
+# den table light
 - platform: tplink
   host: 192.168.0.91
   name: Table Light
