@@ -238,7 +238,7 @@
       data:
         hold_mode: 'away'
 
--alias: 'Home on iPhone'
+- alias: 'Home on iPhone'
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
