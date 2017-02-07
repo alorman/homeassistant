@@ -226,7 +226,7 @@
 - alias: 'Away on iPhone'
   trigger:
     platform: state
-    edntity_id: device_tracker.alexs_iphone
+    entity_id: device_tracker.alexs_iphone
     from: 'home'
     to: 'away'
   action:
@@ -241,7 +241,7 @@
 -alias: 'Home on iPhone'
   trigger:
     platform: state
-    edntity_id: device_tracker.alexs_iphone
+    entity_id: device_tracker.alexs_iphone
     from: 'away'
     to: 'home'
   action:
