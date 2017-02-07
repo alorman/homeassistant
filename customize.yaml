@@ -192,3 +192,11 @@ sensor.apple_tv_power:
   hidden: true
 device_tracker.living_room_apple_tv:
   hidden: true
+
+#hide the speedtest business
+sensor.speedtest_download:
+  hidden: true
+sensor.speedtest_ping:
+  hidden: true
+sensor.speedtest_upload:
+  hidden: true
