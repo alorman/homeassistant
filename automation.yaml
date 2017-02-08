@@ -236,6 +236,7 @@
       entity_id: switch.table_light
     - service: climate.set_hold_mode
       data:
+        entity_id: climate.den
         hold_mode: 'away'
 
 - alias: 'Home on iPhone'
@@ -249,4 +250,6 @@
       entity_id: switch.table_light
     - service: climate.set_hold_mode
       data:
+        entity_id: climate.den
         hold_mode: 'home'
+
