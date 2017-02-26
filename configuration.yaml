@@ -115,3 +115,6 @@ automation: !include automation.yaml
 
 #call groups separately
 group: !include groups.yaml
+
+#add config for v.39
+config:
