@@ -120,7 +120,7 @@ group: !include groups.yaml
 twilio:
   account_sid: !secret twilio_sid
   auth_token: !secret twilio_auth
-  from_number: !secret twilio_from_number
+  #from_number: !secret twilio_from_number
   
 #add config for v.39
 config:
