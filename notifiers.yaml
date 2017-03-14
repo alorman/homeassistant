@@ -8,9 +8,4 @@
   name: rasplex2
   host: rasplex_host2
   port: 8081
-  
-- name: sms_notify
-  platform: twilio_sms
-  account_sid: !secret twilio_sid
-  auth_token: !secret twilio_auth
-  from_number: !secret twilio_from_number
+
