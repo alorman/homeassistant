@@ -253,7 +253,7 @@
         entity_id: climate.den
         hold_mode: 'home'
 
-- alias: "OpenVPN Working"
+- alias: 'OpenVPN Working'
     trigger:
       platform: state
       entity_id: 'sensor.openvpn'
