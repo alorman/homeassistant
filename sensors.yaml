@@ -32,3 +32,9 @@
     - upload
 
 - platform: dnsip
+
+- platform: template
+  sensors:
+    openvpn:
+      entity_id: sensor.myipopendnscom
+      value_template: "{%- if is_state('sensor.myipopendnscom', '!secret vpnip') -%} False {%- else -%} True {%- endif %}"
