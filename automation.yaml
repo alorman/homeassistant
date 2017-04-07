@@ -254,15 +254,15 @@
         hold_mode: 'home'
 
 - alias: 'OpenVPN Working'
-    trigger:
-      platform: state
-      entity_id: sensor.openvpn
-      from: 'True'
-      to: 'False'
-    action:
-      service: notify.sms_notify
-      data:
-      message: 'OpenVPN Down!'
-      target:
-        - +12022361848
+  trigger:
+    platform: state
+    entity_id: sensor.openvpn
+    from: 'True'
+    to: 'False'
+   action:
+     service: notify.sms_notify
+     data:
+     message: 'OpenVPN Down!'
+     target:
+       - +12022361848
     
