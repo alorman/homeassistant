@@ -37,4 +37,4 @@
   sensors:
     openvpn:
       entity_id: sensor.myipopendnscom
-      value_template: "{%- if is_state('sensor.myipopendnscom', '52.55.38.252') -%} False {%- else -%} True {%- endif %}"
+      value_template: "{%- if is_state('sensor.myipopendnscom', '52.55.38.252') -%} True {%- else -%} False {%- endif %}"
