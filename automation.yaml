@@ -253,3 +253,8 @@
         entity_id: climate.den
         hold_mode: 'home'
 
+- alias: 'OpenVPN Working'
+  trigger:
+    platform: sensor
+    entity_id: sensor.myipopendnscom
+    
