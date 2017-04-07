@@ -204,3 +204,7 @@ sensor.speedtest_upload:
 #hide the vpon DNS
 sensor.myipopendnscom:
   hidden: true
+
+#VPN setup
+sensor.openvpn:
+  friendly_name: VPN Up
