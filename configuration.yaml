@@ -73,7 +73,7 @@ climate:
 
 #Call Emulated Hue
 emulated_hue:
-#  host_ip: 192.168.1.111
+  host_ip: 192.168.0.89
   listen_port: 8300
   expose_by_default: true
   exposed_domains:
