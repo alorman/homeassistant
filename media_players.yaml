@@ -25,9 +25,9 @@
 #  attributes:
 #    state: sensor.apple_tv_power
 
-#- platform: apple_tv
-#  host: 192.168.0.98
-#  login_id: !secret  atv_login
+- platform: apple_tv
+  host: 192.168.0.98
+  login_id: !secret  atv_login
   
 - platform: universal
   name: Teac Amplifier
