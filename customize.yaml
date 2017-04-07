@@ -202,5 +202,5 @@ sensor.speedtest_upload:
   hidden: true
 
 #hide the vpon DNS
-#sensor.myipopendnscom
-#  hidden: true
+sensor.myipopendnscom:
+  hidden: true
