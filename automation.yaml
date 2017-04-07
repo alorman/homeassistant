@@ -260,9 +260,9 @@
       from: 'False'
       to: 'True'
     action:
-      service: notify.sms_notify
-      data:
-      message: 'OpenVPN Down!'
-      target:
-        - +12022361848
+      #service: notify.sms_notify
+      #data:
+      #message: 'OpenVPN Down!'
+      #target:
+      #  - +12022361848
     
