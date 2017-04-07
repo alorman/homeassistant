@@ -253,13 +253,13 @@
         entity_id: climate.den
         hold_mode: 'home'
 
-- alias: 'OpenVPN Working'
-    trigger:
-      platform: state
-      entity_id: sensor.myipopendnscom
-      from: 'False'
-      to: 'True'
-    action:
+#- alias: 'OpenVPN Working'
+#    trigger:
+#      platform: state
+#      entity_id: sensor.myipopendnscom
+#      from: 'False'
+#      to: 'True'
+#    action:
       #service: notify.sms_notify
       #data:
       #message: 'OpenVPN Down!'
