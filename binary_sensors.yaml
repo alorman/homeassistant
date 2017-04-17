@@ -2,7 +2,7 @@
 
 #ping the teac amp to see if it's on
 - platform: command_line
-  command: 'ping -c 1 192.168.0.92 | grep "1 received" | wc -l'
+  command: 'ping -c 1 192.168.0.102 | grep "1 received" | wc -l'
   name: 'is_teac_amp_online'
   device_class: connectivity
   payload_on: 1
@@ -10,7 +10,7 @@
 
 #ping the apple tv to see if it's on
 - platform: command_line
-  command: 'ping -c 1 192.168.0.98 | grep "1 received" | wc -l'
+  command: 'ping -c 1 192.168.0.102 | grep "1 received" | wc -l'
   name: 'is_apple_tv_online'
   device_class: connectivity
   payload_on: 1
