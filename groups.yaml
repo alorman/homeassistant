@@ -2,9 +2,9 @@
 
 #media player tab
 media_group:
-  name: Media Cabinet
+  name: Internet Data
   control: hidden
   entities:
-    - automation.set_a_scene_with_the_philips_hue_bulbs_when_we_watch_tv_with_the_harmony
-    - automation.text_alex_about_power_down
-    - media_player.teac_amplifier
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
