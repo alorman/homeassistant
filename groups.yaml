@@ -1,12 +1,13 @@
 #separate groups file
-default_view:
-  view: yes
-  entities:
-    - light.bedroom
-    - light.kitchen
-    - light.den
-    - climate.bedroom
-    - climate.den
+#default_view:
+#  view: yes
+#  entities:
+#    - light.bedroom
+#    - light.kitchen
+#    - light.den
+#    - light.table
+#    - climate.bedroom
+#    - climate.den
     
 #media player tab
 media_group:
