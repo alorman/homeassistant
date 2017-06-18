@@ -22,6 +22,8 @@ default_view:
     - sensor.bedroom_thermostat_temperature
     - sensor.openvpn
     - sun.sun
+    - device_tracker.alexs_iphone
+    - sensor.yr_symbol
 #media player tab
 media_group:
   name: Internet Data
