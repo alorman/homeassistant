@@ -1,14 +1,27 @@
 #separate groups file
 #default_view:
-#  view: yes
-#  entities:
-#    - light.bedroom
-#    - light.kitchen
-#    - light.den
-#    - light.table
-#    - climate.bedroom
-#    - climate.den
-    
+  view: yes
+  entities:
+    - light.bedroom
+    - light.kitchen
+    - light.den
+    - switch.table_light
+    - climate.bedroom
+    - climate.den
+    - media_player.apple_tv
+    - media_player.lg_tv
+    - media_player.teac_amplifier
+    - automation.away_on_iphone
+    - automation.home_on_iphone
+    - automation.nobody_home
+    - automation.openvpn_down
+    - input_boolean.night_shift
+    - input_boolean.arm_alarm
+    - sensor.den_away_mode
+    - sensor.den_thermostat_temperature
+    - sensor.bedroom_thermostat_temperature
+    - sensor.openvpn
+    - sun.sun
 #media player tab
 media_group:
   name: Internet Data
