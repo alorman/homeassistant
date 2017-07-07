@@ -8,10 +8,11 @@
   payload_on: 1
   payload_off: 0
 
+# depricated due to use of atv component
 #ping the apple tv to see if it's on
-- platform: command_line
-  command: 'ping -c 1 192.168.0.104 | grep "1 received" | wc -l'
-  name: 'is_apple_tv_online'
-  device_class: connectivity
-  payload_on: 1
-  payload_off: 0
+#- platform: command_line
+#  command: 'ping -c 1 192.168.0.104 | grep "1 received" | wc -l'
+#  name: 'is_apple_tv_online'
+#  device_class: connectivity
+#  payload_on: 1
+#  payload_off: 0
