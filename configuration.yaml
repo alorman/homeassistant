@@ -23,7 +23,7 @@ frontend:
 
 #Enable MQTT built-in broker
 mqtt:
-  topic: some_mqtt/topic/here
+
 http:
   # Uncomment this to add a password (recommended!)
   # api_password: !secrets api_password
