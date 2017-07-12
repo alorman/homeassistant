@@ -44,3 +44,5 @@
 
 - platform: mqtt
   state_topic: "outTopic"
+  name: "Test input"
+  
