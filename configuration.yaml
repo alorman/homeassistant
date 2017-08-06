@@ -22,7 +22,7 @@ homeassistant:
 frontend:
 
 #Enable MQTT built-in broker
-mqtt:
+#mqtt:
 
 http:
   # Uncomment this to add a password (recommended!)
