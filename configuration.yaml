@@ -127,3 +127,10 @@ twilio:
   
 #add config for v.39
 config:
+
+recorder:
+  purge_interval: 90
+  purge_keep_days: 30
+  exclude:
+    entities:
+      - sensor.sun
