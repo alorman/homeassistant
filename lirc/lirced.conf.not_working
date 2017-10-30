@@ -1,0 +1,4 @@
+include /etc/lirc/apple_tv.conf
+include /etc/lirc/lg_tv.conf
+include /etc/lirc/teac_amp.conf
+include /etc/lirc/masscool_switch.conf
