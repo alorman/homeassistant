@@ -89,7 +89,7 @@
   condition:
     condition: state
     entity_id: input_boolean.arm_alarm
-    state: 'on'
+    to: 'on'
   action:
     service: notify.sms_notify
     data:
@@ -102,7 +102,7 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    state: 'off'
+    to: 'off'
   condition:
     condition: state
     entity_id: light.den
@@ -117,7 +117,7 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    state: 'off'
+    to: 'off'
   condition:
     condition: state
     entity_id: light.bedroom
@@ -132,7 +132,7 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    state: 'off'
+    to: 'off'
   condition:
     condition: state
     entity_id: light.kitchen
@@ -148,7 +148,7 @@
   trigger:
     platform: state
     entity_id: light.den
-    state: 'off'
+    to: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_den
@@ -158,7 +158,7 @@
   trigger:
     platform: state
     entity_id: light.den
-    state: 'on'
+    to: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
@@ -172,7 +172,7 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    state: 'off'
+    to: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_kitchen
@@ -182,7 +182,7 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    state: 'on'
+    to: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
@@ -196,7 +196,7 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    state: 'off'
+    to: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_bedroom
@@ -206,7 +206,7 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    state: 'on'
+    to: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
@@ -220,7 +220,7 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    state: 'away'
+    to: 'away'
   action:
     - delay: '00:00:30'
     - service: light.turn_off
@@ -235,7 +235,7 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    state: 'home'
+    to: 'home'
   action:
     - service: switch.turn_on
       entity_id: switch.table_light
@@ -248,7 +248,7 @@
 #  trigger:
 #    platform: state
 #    entity_id: sensor.openvpn
-##    state: 'False'
+##    to: 'False'
  #  action:
  #    service: notify.sms_notify
  #    data:
@@ -260,7 +260,7 @@
   trigger:
     platform: state
     entity_id: sensor.openvpn
-    state: 'False'
+    to: 'False'
   action:
     service: notify.sms_notify
     data:
