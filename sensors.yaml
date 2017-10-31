@@ -46,3 +46,6 @@
   state_topic: "outTopic"
   name: "Test input"
   
+- platform: citybikes
+  name: Mass Ave Hubway
+  radius: 500
