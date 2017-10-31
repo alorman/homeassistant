@@ -78,7 +78,7 @@
       data:
         message: 'Someone pressed the power key'
         target:
-          - +12022361848
+          - !secret twilio_to_number
 
 #Nest motion detection
 - alias: 'Nobody Home'
@@ -95,7 +95,7 @@
     data:
       message: 'In your base, stealing your mans'
       target:
-        - +12022361848
+        - !secret twilio_to_number
 
 #Return lights to preset color temp when Night Shift goes off
 - alias: 'Night Shift Off -Den'
@@ -255,7 +255,7 @@
  #    data:
   #   message: 'OpenVPN Down!'
   #   target:
-  #     - +12022361848
+  #     - !secret twilio_to_number
        
 - alias: 'OpenVPN Down'
   trigger:
