@@ -205,3 +205,4 @@ sensor.openvpn:
 #add hubway sensor to main HUD
 sensor.hubway_mass_ave_hubway_575e04966344a392bbbf9eccf09f029d:
   hidden: false
+  friendly_name: Hubway
