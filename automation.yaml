@@ -85,11 +85,11 @@
   trigger:
     platform: state
     entity_id: sensor.bedroom_away_mode, sensor.den_away_mode
-    state: 'False'
+    to: 'False'
   condition:
     condition: state
     entity_id: input_boolean.arm_alarm
-    to: 'on'
+    state: 'on'
   action:
     service: notify.sms_notify
     data:
