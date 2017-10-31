@@ -48,4 +48,5 @@
   
 - platform: citybikes
   name: Mass Ave Hubway
-  radius: 500
+  staations:
+    - 575e04966344a392bbbf9eccf09f029d
