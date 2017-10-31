@@ -102,7 +102,6 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    from: 'on'
     to: 'off'
   condition:
     condition: state
@@ -118,7 +117,6 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    from: 'on'
     to: 'off'
   condition:
     condition: state
@@ -134,7 +132,6 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    from: 'on'
     to: 'off'
   condition:
     condition: state
@@ -161,7 +158,6 @@
   trigger:
     platform: state
     entity_id: light.den
-    from: 'off'
     to: 'on'
   condition:
     condition: state
@@ -176,7 +172,6 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    from: 'on'
     to: 'off'
   action:
     - service: homeassistant.turn_off
@@ -201,7 +196,6 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    from: 'on'
     to: 'off'
   action:
     - service: homeassistant.turn_off
@@ -212,7 +206,6 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    from: 'off'
     to: 'on'
   condition:
     condition: state
@@ -227,7 +220,6 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    from: 'home'
     to: 'away'
   action:
     - delay: '00:00:30'
@@ -243,7 +235,6 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    from: 'away'
     to: 'home'
   action:
     - service: switch.turn_on
