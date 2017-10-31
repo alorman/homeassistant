@@ -48,5 +48,5 @@
   
 - platform: citybikes
   name: Mass Ave Hubway
-  staations:
+  stations:
     - 68
