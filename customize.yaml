@@ -201,3 +201,7 @@ sensor.myipopendnscom:
 #VPN setup
 sensor.openvpn:
   friendly_name: VPN Up
+
+#add hubway sensor to main HUD
+sensor.hubway_mass_ave_hubway_575e04966344a392bbbf9eccf09f029d
+  friendly_name: Hubway
