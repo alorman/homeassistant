@@ -85,11 +85,11 @@
   trigger:
     platform: state
     entity_id: sensor.bedroom_away_mode, sensor.den_away_mode
-    to: 'False'
+    state: 'False'
   condition:
     condition: state
     entity_id: input_boolean.arm_alarm
-    to: 'on'
+    state: 'on'
   action:
     service: notify.sms_notify
     data:
@@ -102,11 +102,11 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    to: 'off'
+    state: 'off'
   condition:
     condition: state
     entity_id: light.den
-    to: 'on'
+    state: 'on'
   action:
     service: light.hue_activate_scene
     data:
@@ -117,11 +117,11 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    to: 'off'
+    state: 'off'
   condition:
     condition: state
     entity_id: light.bedroom
-    to: 'on'
+    state: 'on'
   action:
     service: light.hue_activate_scene
     data:
@@ -132,11 +132,11 @@
   trigger:
     platform: state
     entity_id: switch.night_shift
-    to: 'off'
+    state: 'off'
   condition:
     condition: state
     entity_id: light.kitchen
-    to: 'on'
+    state: 'on'
   action:
     service: light.hue_activate_scene
     data:
@@ -148,7 +148,7 @@
   trigger:
     platform: state
     entity_id: light.den
-    to: 'off'
+    state: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_den
@@ -158,11 +158,11 @@
   trigger:
     platform: state
     entity_id: light.den
-    to: 'on'
+    state: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
-    to: 'on'
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_den
@@ -172,7 +172,7 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    to: 'off'
+    state: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_kitchen
@@ -182,11 +182,11 @@
   trigger:
     platform: state
     entity_id: light.kitchen
-    to: 'on'
+    state: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
-    to: 'on'
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_kitchen
@@ -196,7 +196,7 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    to: 'off'
+    state: 'off'
   action:
     - service: homeassistant.turn_off
       entity_id: switch.night_shift_bedroom
@@ -206,11 +206,11 @@
   trigger:
     platform: state
     entity_id: light.bedroom
-    to: 'on'
+    state: 'on'
   condition:
     condition: state
     entity_id: input_boolean.night_shift
-    to: 'on'
+    state: 'on'
   action:
     - service: homeassistant.turn_on
       entity_id: switch.night_shift_bedroom
@@ -220,7 +220,7 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    to: 'away'
+    state: 'away'
   action:
     - delay: '00:00:30'
     - service: light.turn_off
@@ -235,7 +235,7 @@
   trigger:
     platform: state
     entity_id: device_tracker.alexs_iphone
-    to: 'home'
+    state: 'home'
   action:
     - service: switch.turn_on
       entity_id: switch.table_light
@@ -248,8 +248,7 @@
 #  trigger:
 #    platform: state
 #    entity_id: sensor.openvpn
-#    from: 'True'
-##    to: 'False'
+##    state: 'False'
  #  action:
  #    service: notify.sms_notify
  #    data:
@@ -261,7 +260,7 @@
   trigger:
     platform: state
     entity_id: sensor.openvpn
-    to: 'False'
+    state: 'False'
   action:
     service: notify.sms_notify
     data:
