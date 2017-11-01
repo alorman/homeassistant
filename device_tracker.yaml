@@ -3,3 +3,4 @@
 #add bluetooth to track the apple tv
 - platform: bluetooth_tracker
   track_new_devices: yes
+  interval_seconds: 60
