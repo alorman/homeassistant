@@ -41,10 +41,6 @@
     openvpn:
       entity_id: sensor.myipopendnscom
       value_template: "{%- if is_state('sensor.myipopendnscom', '52.55.38.252') -%} True {%- else -%} False {%- endif %}"
-
-- platform: mqtt
-  state_topic: "outTopic"
-  name: "Test input"
   
 - platform: citybikes
   name: Mass Ave Hubway
