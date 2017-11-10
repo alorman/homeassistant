@@ -1,0 +1,222 @@
+#begin
+#    remote = testremote
+#    button = key_power
+#    prog   = home-assistant
+#    config = key_power
+#end
+#begin
+#    remote = testremote
+#    button = key_playpause
+#    prog   = home-assistant
+#    config = key_playpause
+#end
+begin
+    remote = lg_tv_remote
+    button = key_power
+    prog   = home-assistant
+    config = lg_tv_power
+end
+begin
+    remote = lg_tv_remote
+    button = key_enter
+    prog   = home-assistant
+    config = lg_tv_enter
+end
+begin
+    remote = lg_tv_remote
+    button = key_volumeup
+    prog   = home-assistant
+    config = lg_tv_volumeup
+end
+begin
+    remote = lg_tv_remote
+    button = key_volumedown
+    prog   = home-assistant
+    config = lg_tv_volumedown
+end
+begin
+    remote = apple_tv_remote
+    button = key_enter
+    prog   = home-assistant
+    config = apple_tv_enter
+end
+begin
+    remote = apple_tv_remote
+    button = key_left
+    prog   = home-assistant
+    config = apple_tv_left
+end
+begin
+    remote = apple_tv_remote
+    button = key_right
+    prog   = home-assistant
+    config = apple_tv_right
+end
+begin
+    remote = apple_tv_remote
+    button = key_up
+    prog   = home-assistant
+    config = apple_tv_up
+end
+begin
+    remote = apple_tv_remote
+    button = key_down
+    prog   = home-assistant
+    config = apple_tv_down
+end
+begin
+    remote = apple_tv_remote
+    button = key_playpause
+    prog   = home-assistant
+    config = apple_tv_playpause
+end
+begin
+    remote = apple_tv_remote
+    button = key_menu
+    prog   = home-assistant
+    config = apple_tv_menu
+end
+begin
+    remote = teac_remote
+    button = key_power
+    prog   = home-assistant
+    config = teac_power
+end
+begin
+    remote = teac_remote
+    button = key_volumeup
+    prog   = home-assistant
+    config = teac_volumeup
+end
+begin
+    remote = teac_remote
+    button = key_volumedown
+    prog   = home-assistant
+    config = teac_volumedown
+end
+begin
+    remote = teac_remote
+    button = key_mute
+    prog   = home-assistant
+    config = teac_mute
+end
+begin
+    remote = teac_remote
+    button = key_0
+    prog   = home-assistant
+    config = teac_net_radio
+end
+begin
+    remote = teac_remote
+    button = key_1
+    prog   = home-assistant
+    config = teac_usb_ipod
+end
+begin
+    remote = teac_remote
+    button = key_2
+    prog   = home-assistant
+    config = teac_usb_audio
+end
+begin
+    remote = teac_remote
+    button = key_3
+    prog   = home-assistant
+    config = teac_digital_in
+end
+begin
+    remote = teac_remote
+    button = key_4
+    prog   = home-assistant
+    config = teac_phono
+end
+begin
+    remote = masscool_switch
+    button = key_0
+    prog   = home-assistant
+    config = masscool_input_1
+end
+begin
+    remote = masscool_switch
+    button = key_1
+    prog   = home-assistant
+    config = masscool_input_2
+end
+begin
+    remote = masscool_switch
+    button = key_2
+    prog   = home-assistant
+    config = masscool_input_3
+end
+begin
+    remote = monitor_light
+    button = key_0
+    prog   = home-assistant
+    config = monitor_light_red
+end
+begin
+    remote = monitor_light
+    button = key_1
+    prog   = home-assistant
+    config = monitor_light_green
+end
+begin
+    remote = monitor_light
+    button = key_2
+    prog   = home-assistant
+    config = monitor_light_blue
+end
+begin
+    remote = monitor_light
+    button = key_3
+    prog   = home-assistant
+    config = monitor_light_white
+end
+begin
+    remote = monitor_light
+    button = key_4
+    prog   = home-assistant
+    config = monitor_light_orange
+end
+begin
+    remote = monitor_light
+    button = key_5
+    prog   = home-assistant
+    config = monitor_light_yellow
+end
+begin
+    remote = monitor_light
+    button = key_6
+    prog   = home-assistant
+    config = monitor_light_cyan
+end
+begin
+    remote = monitor_light
+    button = key_7
+    prog   = home-assistant
+    config = monitor_light_purple
+end
+begin
+    remote = monitor_light
+    button = key_power
+    prog   = home-assistant
+    config = monitor_light_on
+end
+begin
+    remote = monitor_light
+    button = key_mute
+    prog   = home-assistant
+    config = monitor_light_off
+end
+begin
+    remote = monitor_light
+    button = key_volumeup
+    prog   = home-assistant
+    config = monitor_light_brighter
+end
+begin
+    remote = monitor_light
+    button = key_volumedown
+    prog   = home-assistant
+    config = monitor_light_dimmer
+end
