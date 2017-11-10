@@ -36,11 +36,11 @@
 
 - platform: dnsip
 
-- platform: template
-  sensors:
-    openvpn:
-      entity_id: sensor.myipopendnscom
-      value_template: "{%- if is_state('sensor.myipopendnscom', '52.55.38.252') -%} True {%- else -%} False {%- endif %}"
+#- platform: template
+#  sensors:
+#    openvpn:
+#      entity_id: sensor.myipopendnscom
+#      value_template: "{%- if is_state('sensor.myipopendnscom', '52.55.38.252') -%} True {%- else -%} False {%- endif %}"
   
 - platform: citybikes
   name: Mass Ave Hubway
