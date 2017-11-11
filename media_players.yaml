@@ -28,6 +28,7 @@
 - platform: apple_tv
   host: 192.168.0.98
   login_id: !secret  atv_login
+  credentials: !secret atv_creds
   name: Living Room Apple TV
   start_off: true
   
