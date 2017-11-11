@@ -29,7 +29,7 @@
   host: 192.168.0.98
   login_id: !secret  atv_login
   name: Living Room Apple TV
-  start_off: true
+  #start_off: true
   
 - platform: universal
   name: Teac Amplifier
