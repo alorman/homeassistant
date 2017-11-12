@@ -44,3 +44,6 @@
       #volume_mute: "irsend send_once testremote key_volumedown && sudo wall irsend power key"
   attributes:
     state: binary_sensor.is_teac_amp_online
+
+-platform: firetv
+  name: Fire TV
