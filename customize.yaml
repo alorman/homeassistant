@@ -142,6 +142,8 @@ media_player.lg_tv:
   hidden: false
 media_player.teac_amplifier:
   hidden: false
+media_player.fire_tv:
+  hidden: false
 
 #hide the Hue button followers
 light.dimmer_2:
