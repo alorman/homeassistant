@@ -142,7 +142,7 @@ media_player.lg_tv:
   hidden: false
 media_player.teac_amplifier:
   hidden: false
-media_player.fire_tv:
+media_player.firetv:
   hidden: false
 
 #hide the Hue button followers
