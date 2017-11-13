@@ -34,16 +34,16 @@
     - service: homeassistant.toggle
       entity_id: input_boolean.lg_tv_status
 
-- alias: 'Following state machine for Apple TV'
-  hide_entity: True
-  trigger:
-    platform: event
-    event_type: ir_command_received
-    event_data:
-      button_name: apple_tv_playpause
-  action:
-    - service: homeassistant.turnon
-      entity_id: input_boolean.apple_tv_status
+#- alias: 'Following state machine for Apple TV'
+#  hide_entity: True
+#  trigger:
+#    platform: event
+#    event_type: ir_command_received
+#    event_data:
+#      button_name: apple_tv_playpause
+#  action:
+#    - service: homeassistant.turnon
+#      entity_id: input_boolean.apple_tv_status
 
 - alias: 'Following state machine for Teac Amplifier'
   hide_entity: True
@@ -288,7 +288,7 @@
     event_data:
       button_name: fire_tv_play
   action:
-    - service: media_player.play
+    - service: media_player.media_play
       entity_id: media_player.fire_tv
 
 - alias: 'Fire TV key pause'
@@ -299,5 +299,15 @@
     event_data:
       button_name: fire_tv_pause
   action:
-    - service: media_player.pause
+    - service: media_player.media_pause
       entity_id: media_player.fire_tv
+
+- alias: 'Fire TV key home'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_key_home
+  action:
+    - service: shell_command.fire_tv_home
