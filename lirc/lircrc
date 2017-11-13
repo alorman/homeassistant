@@ -220,3 +220,69 @@ begin
     prog   = home-assistant
     config = monitor_light_dimmer
 end
+begin
+    remote = fire_tv
+    button = key_play
+    prog   = home-assistant
+    config = fire_tv_play
+end
+begin
+    remote = fire_tv
+    button = key_pause
+    prog   = home-assistant
+    config = fire_tv_pause
+end
+begin
+    remote = fire_tv
+    button = key_up
+    prog   = home-assistant
+    config = fire_tv_up
+end
+begin
+    remote = fire_tv
+    button = key_down
+    prog   = home-assistant
+    config = fire_tv_down
+end
+begin
+    remote = fire_tv
+    button = key_left
+    prog   = home-assistant
+    config = fire_tv_left
+end
+begin
+    remote = fire_tv
+    button = key_right
+    prog   = home-assistant
+    config = fire_tv_right
+end
+begin
+    remote = fire_tv
+    button = key_power
+    prog   = home-assistant
+    config = fire_tv_power
+end
+begin
+    remote = fire_tv
+    button = key_back
+    prog   = home-assistant
+    config = fire_tv_back
+end
+begin
+    remote = fire_tv
+    button = key_home
+    prog   = home-assistant
+    config = fire_tv_home
+end
+begin
+    remote = fire_tv
+    button = key_fastforward
+    prog   = home-assistant
+    config = fire_tv_fastforward
+end
+begin
+    remote = fire_tv
+    button = key_rewind
+    prog   = home-assistant
+    config = fire_tv_rewind
+end
