@@ -267,9 +267,9 @@
       message: 'OpenVPN is down!'
       target:
         - +12022361848   
-        
-#fireTV mapping for infrared to web control
-- alias: 'transmit power on command fire TV'
+
+#fireTV infrared to IP remote relay commands
+- alias: 'Fire TV key power'
   hide_entity: True
   trigger:
     platform: event
@@ -279,8 +279,8 @@
   action:
     - service: media_player.turn_on
       entity_id: media_player.fire_tv
-      
-- alias: 'transmit play command fire TV'
+
+- alias: 'Fire TV key play'
   hide_entity: True
   trigger:
     platform: event
@@ -290,8 +290,8 @@
   action:
     - service: media_player.play
       entity_id: media_player.fire_tv
- 
- - alias: 'transmit pause command fire TV'
+
+- alias: 'Fire TV key pause'
   hide_entity: True
   trigger:
     platform: event
