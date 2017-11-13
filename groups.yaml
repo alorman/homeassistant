@@ -11,7 +11,7 @@ default_view:
     - media_player.apple_tv
     - media_player.lg_tv
     - media_player.teac_amplifier
-    - media_player.firetv
+    - media_player.fire_tv
     - media_player.living_room_apple_tv
     - automation.away_on_iphone
     - automation.home_on_iphone
