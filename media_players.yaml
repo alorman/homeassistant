@@ -45,5 +45,5 @@
   attributes:
     state: binary_sensor.is_teac_amp_online
 
-- platform: fire_tv
+- platform: firetv
   name: Fire TV
