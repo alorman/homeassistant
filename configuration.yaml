@@ -52,6 +52,16 @@ logbook:
       - sensor.openvpn
       - sensor.myipopendnscom
       - sensor.yr_symbol
+      - automation.fire_tv_key_back
+      - automation.fire_tv_key_down
+      - automation.fire_tv_key_enter
+      - automation.fire_tv_key_home
+      - automation.fire_tv_key_left
+      - automation.fire_tv_key_pause
+      - automation.fire_tv_key_play
+      - automation.fire_tv_key_power
+      - automation.fire_tv_key_right
+      - automation.fire_tv_key_up
 
 # Track the sun
 sun:
