@@ -1,0 +1,13 @@
+[Unit]
+Description=Fire TV Server
+
+[Service]
+ExecStart=/usr/local/bin/firetv-server -d 192.168.0.96:5555
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
