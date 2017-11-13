@@ -10,3 +10,14 @@ monitor_surround_on: 'irsend send_once monitor_light key_power'
 monitor_surround_off: 'irsend send_once monitor_light key_mute'
 monitor_surround_bright: 'irsend send_once monitor_light key_volumeup'
 monitor_surround_dim: 'irsend send_once monitor_light key_volumedown'
+
+#Commands for controlling fire TV through abd
+fire_tv_home: 'adb shell input keyevent 3'
+fire_tv_back: 'adb shell input keyevent 4'
+fire_tv_enter: 'adb shell input keyevent 23'
+fire_tv_left: 'adb shell input keyevent 21'
+fire_tv_right: 'adb shell input keyevent 22'
+fire_tv_up: 'adb shell input keyevent 19'
+fire_tv_down: 'adb shell input keyevent 20'
+
+#Code sources are in the Code Sources.md file
