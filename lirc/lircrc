@@ -286,3 +286,9 @@ begin
     prog   = home-assistant
     config = fire_tv_rewind
 end
+begin
+    remote = fire_tv
+    button = key_enter
+    prog   = home-assistant
+    config = fire_tv_enter
+end
