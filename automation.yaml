@@ -362,3 +362,12 @@
   action:
     - service: shell_command.fire_tv_back
 
+- alias: 'Fire TV key enter'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_enter
+  action:
+    - service: shell_command.fire_tv_enter
