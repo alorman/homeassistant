@@ -1,4 +1,4 @@
-'''
+```
 0 -->  "KEYCODE_UNKNOWN" 
 1 -->  "KEYCODE_MENU" 
 2 -->  "KEYCODE_SOFT_RIGHT" 
@@ -85,4 +85,4 @@
 83 -->  "KEYCODE_NOTIFICATION" 
 84 -->  "KEYCODE_SEARCH" 
 85 -->  "TAG_LAST_KEYCODE"
-'''
+```
