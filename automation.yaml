@@ -321,3 +321,44 @@
       button_name: fire_tv_left
   action:
     - service: shell_command.fire_tv_left
+
+- alias: 'Fire TV key right'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_right
+  action:
+    - service: shell_command.fire_tv_right
+ 
+- alias: 'Fire TV key up'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_up
+  action:
+    - service: shell_command.fire_tv_up
+
+- alias: 'Fire TV key down'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_down
+  action:
+    - service: shell_command.fire_tv_down
+
+- alias: 'Fire TV key back'
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: ir_command_received
+    event_data:
+      button_name: fire_tv_back
+  action:
+    - service: shell_command.fire_tv_back
+
