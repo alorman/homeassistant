@@ -303,7 +303,7 @@
       entity_id: media_player.fire_tv
 
 - alias: 'Fire TV key home'
-  hide_entity: True
+  hide_entity: False
   trigger:
     platform: event
     event_type: ir_command_received
