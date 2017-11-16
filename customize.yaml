@@ -209,6 +209,10 @@ sensor.myipopendnscom:
 #sensor.openvpn:
 #  friendly_name: VPN Up
 
+sensor.outdoor_temp:
+  hidden: false
+  friendly_name: "Outdoor Temp"
+  
 #add hubway sensor to main HUD
 !secret hubway_sensor:
   hidden: false
