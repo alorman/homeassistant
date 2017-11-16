@@ -47,6 +47,9 @@
 - platform: template
   sensors:
      outdoor_temp:
+       entity_id: sensor.yr_temperature
+       friendly_name: "Outdoors"
+       unit_of_measurement: '°F'
        value_template: "{{ states.sensor.yr_temperature.state | round(0) }}"
       
 - platform: citybikes
