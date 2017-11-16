@@ -49,7 +49,6 @@
     outdoor_temp:
       friendly_name: "Outdoor Temp"
       unit_of_measurement: '°F'
-      entity_id: sensor.outdoor_temp
       value_template: "{{ sensor.yr_temperature | round(0) }}"
       
 - platform: citybikes
