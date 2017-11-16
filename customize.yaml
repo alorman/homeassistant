@@ -1,8 +1,12 @@
 #customize display icons
 
+#Hide the sun
+sun.sun
+
 #name change on nest temps
 sensor.bedroom_thermostat_temperature:
   friendly_name: Bedroom
+  hidden: true
 sensor.den_thermostat_temperature:
   friendly_name: Den
 sensor._thermostat_temperature:
