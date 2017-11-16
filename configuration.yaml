@@ -49,7 +49,7 @@ logbook:
       - sensor.sun
       - sun.sun
       - sensor.hubway_mass_ave_hubway_575e04966344a392bbbf9eccf09f029d
-      - sensor.openvpn
+      #- sensor.openvpn
       - sensor.myipopendnscom
       - sensor.yr_symbol
       - automation.fire_tv_key_back
@@ -151,6 +151,6 @@ recorder:
       - sensor.sun
       - sun.sun
       - sensor.hubway_mass_ave_hubway_575e04966344a392bbbf9eccf09f029d
-      - sensor.openvpn
+      #- sensor.openvpn
       - sensor.myipopendnscom
       - sensor.yr_symbol
