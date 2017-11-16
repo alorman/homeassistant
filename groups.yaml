@@ -26,7 +26,8 @@ default_view:
     - sun.sun
     - device_tracker.alexs_iphone
     - sensor.yr_symbol
-    - sensor.hubway_mass_ave_hubway_575e04966344a392bbbf9eccf09f029d
+    - !secret hubway_sensor
+    - sensor.yr_temperature
 #media player tab
 media_group:
   name: Internet Data
