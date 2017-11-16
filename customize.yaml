@@ -1,8 +1,8 @@
 #customize display icons
 
 #Hide the sun
-sun.sun:
-  hidden: true
+#sun.sun:
+#  hidden: true
 
 #name change on nest temps
 sensor.bedroom_thermostat_temperature:
