@@ -1,7 +1,7 @@
 #customize display icons
 
 #Hide the sun
-sun.sun
+sun.sun:
   hidden: true
 
 #name change on nest temps
