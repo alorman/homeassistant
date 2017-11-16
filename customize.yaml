@@ -2,6 +2,7 @@
 
 #Hide the sun
 sun.sun
+  hidden: true
 
 #name change on nest temps
 sensor.bedroom_thermostat_temperature:
