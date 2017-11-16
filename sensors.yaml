@@ -47,7 +47,7 @@
 - platform: template
   sensors:
      outdoor_temp:
-       value_template: "{{ sensor.yr_temperature.state | round(0) }}"
+       value_template: "{{ state.sensor.yr_temperature.state | round(0) }}"
       
 - platform: citybikes
   name: !secret hubway_name
