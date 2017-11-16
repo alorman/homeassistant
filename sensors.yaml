@@ -49,7 +49,7 @@
     outdoor_temp:
       friendly_name: "Outdoor Temp"
       unit_of_measurement: '°F'
-      value_template: "{{ sensor.yr_temperature | float | round(0) }}"
+      value_template: "{{ sensor.yr_temperature }}"
       
 - platform: citybikes
   name: !secret hubway_name
