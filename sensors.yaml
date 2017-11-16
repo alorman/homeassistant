@@ -3,7 +3,7 @@
 #weather platform
 - platform: yr
   monitored_conditions:
-    - temperature
+    temperature
 
 #nest bedroom
 - platform: template
