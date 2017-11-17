@@ -37,3 +37,7 @@ media_group:
     - sensor.speedtest_upload
     - sensor.speedtest_ping
     - sensor.speedtest_download
+    - sensor.cpu_used
+    - sensor.disk_used_home
+    - sensor.ram_used
+    - sensor.since_last_boot
