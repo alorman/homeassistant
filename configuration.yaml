@@ -62,6 +62,10 @@ logbook:
       - automation.fire_tv_key_power
       - automation.fire_tv_key_right
       - automation.fire_tv_key_up
+      - sensor.cpu_used
+      - sensor.disk_used_home
+      - sensor.ram_used
+      - sensor.since_last_boot
 
 # Track the sun
 sun:
