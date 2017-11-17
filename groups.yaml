@@ -38,10 +38,12 @@ media_group:
     - sensor.speedtest_ping
     - sensor.speedtest_download
     - sensor.cpu_used
+    - group.compute_group
 
 compute_group:
   name: Self Monitoring
   view: no
+  control: hidden
   entities:
     - sensor.disk_used_home
     - sensor.ram_used
