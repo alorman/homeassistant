@@ -154,3 +154,7 @@ recorder:
       #- sensor.openvpn
       - sensor.myipopendnscom
       - sensor.yr_symbol
+      - sensor.cpu_used
+      - sensor.disk_used_home
+      - sensor.ram_used
+      - sensor.since_last_boot
