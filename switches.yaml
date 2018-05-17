@@ -16,7 +16,7 @@
   sunset_colortemp: 5000
   stop_colortemp: 3500
   brightness: 255
-  mode: xy
+  mode: mired
   
 #kitchen flux setting
 - platform: flux
