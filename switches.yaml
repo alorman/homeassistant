@@ -17,6 +17,7 @@
   stop_colortemp: 3500
   brightness: 255
   mode: mired
+  interval: 10
   
 #kitchen flux setting
 - platform: flux
