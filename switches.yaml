@@ -16,7 +16,7 @@
   sunset_colortemp: 5000
   stop_colortemp: 3500
   brightness: 255
-  mode: mired
+  mode: rgb
   interval: 10
   
 #kitchen flux setting
