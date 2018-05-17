@@ -98,20 +98,20 @@
         - !secret twilio_to_number
 
 #Return lights to preset color temp when Night Shift goes off
-- alias: 'Night Shift Off -Den'
-  trigger:
-    platform: state
-    entity_id: switch.night_shift
-    to: 'off'
-  condition:
-    condition: state
-    entity_id: light.den
-    state: 'on'
-  action:
-    service: light.hue_activate_scene
-    data:
-      group_name: "Den"
-      scene_name: "Den Mid Warm"
+#- alias: 'Night Shift Off -Den'
+#  trigger:
+#    platform: state
+#    entity_id: switch.night_shift
+#    to: 'off'
+#  condition:
+#    condition: state
+#    entity_id: light.den
+#    state: 'on'
+#  action:
+#    service: light.hue_activate_scene
+#    data:
+#      group_name: "Den"
+#      scene_name: "Den Mid Warm"
       
 - alias: 'Night Shift Off -Bedroom'
   trigger:
@@ -144,28 +144,28 @@
       scene_name: "Kitchen Full Bright"
       
 #turning the flux switch off for each light
-- alias: 'Night shift on den'
-  trigger:
-    platform: state
-    entity_id: light.den
-    to: 'off'
-  action:
-    - service: homeassistant.turn_off
-      entity_id: switch.night_shift_den
+#- alias: 'Night shift on den'
+#  trigger:
+#    platform: state
+#    entity_id: light.den
+#    to: 'off'
+#  action:
+#    - service: homeassistant.turn_off
+#      entity_id: switch.night_shift_den
 
 #reverse back on when engaged
-- alias: 'Night shift off den'
-  trigger:
-    platform: state
-    entity_id: light.den
-    to: 'on'
-  condition:
-    condition: state
-    entity_id: input_boolean.night_shift
-    state: 'on'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.night_shift_den
+#- alias: 'Night shift off den'
+#  trigger:
+#    platform: state
+#    entity_id: light.den
+#    to: 'on'
+#  condition:
+#    condition: state
+#    entity_id: input_boolean.night_shift
+#    state: 'on'
+#  action:
+#    - service: homeassistant.turn_on
+#      entity_id: switch.night_shift_den
       
 #night shift for the kitchen       
 - alias: 'Night shift off kitchen'
